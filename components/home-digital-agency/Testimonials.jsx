@@ -19,7 +19,7 @@ function Testimonials() {
     },
   };
   return (
-    <section className="testimonials">
+    <section className="testimonials" style={{display:'none'}}>
       <div className="container section-padding bord-bottom-grd">
         <div className="row">
           <div className="col-lg-4 md-mb50">

@@ -1,23 +1,49 @@
 'use client';
 import React from 'react';
+import BouncingLine from '@/components/BouncingLine';
+import originalData from '@/data/services';
 
 function Intro2() {
-  function openAccordion(event) {
-    document.querySelectorAll('.accordion-info').forEach((element) => {
-      element.classList.remove('active');
-      element.style.maxHeight = 0;
-      element.parentElement.classList.remove('active');
-    });
-    const current = event.currentTarget.nextElementSibling;
-    event.currentTarget.parentElement.classList.add('active');
-    current.style.maxHeight = current.scrollHeight + 'px';
-    current.classList.add('active');
-  }
+  // Add icon override inside switch, no layout change
+  const customData = originalData.map((item, index) => {
+    switch (index) {
+      case 0:
+        return {
+          ...item,
+          title: 'Time zones are no barrier.',
+          desc: 'No matter where you are in the world, it’ll feel like we’re just around the corner. Our streamlined processes make time differences irrelevant.',
+          icon: '/assets/imgs/icon-img/99.png', // your custom icon
+        };
+      case 1:
+        return {
+          ...item,
+          title: 'Impossible? Not in our world.',
+          desc: 'We don’t believe in limitations. We bring your designs to life exactly as envisioned—no shortcuts, no compromises, and definitely no BS.',
+          icon: '/assets/imgs/icon-img/20.png', // custom icon
+        };
+      case 2:
+        return {
+          ...item,
+          title: 'Flexible work terms',
+          desc: 'While we honor a fixed budget, we operate within a defined Time and Materials model. The terms we agree on will always be tailored to fit.',
+          icon: '/assets/imgs/icon-img/30.png', // custom icon
+        };
+      case 3:
+        return {
+          ...item,
+          title: 'Comprehensive services, all in one place',
+          desc: 'From UI/UX and logo design to mobile app development, frontend and backend engineering, and ongoing technical support—we’ve got every aspect of your project covered.',
+          icon: '/assets/imgs/icon-img/40.png', // custom icon
+        };
+      default:
+        return item; // no change
+    }
+  });
 
   return (
-    <section className="intro-accord" style={{ marginBottom: '80px' }}>
+    <section className="intro-accord" style={{ marginTop: '100px', marginBottom: '100px' }}>
+      {/* Header in standard-width container */}
       <div className="container">
-        {/* Section Header with animation like "Our Process" */}
         <div className="sec-head mb-80">
           <div className="d-flex align-items-center mb-30">
             <h2 className="fw-600 fz-70 text-u d-rotate wow">
@@ -31,61 +57,41 @@ function Intro2() {
             <span className="thin"></span>
           </h6>
         </div>
+      </div>
 
-        {/* Full-width accordion (no image column) */}
-        <div className="row justify-content-center">
-          <div className="col-lg-12">
-            <div className="accordion bord">
-              {[
-                {
-                  title: "Time zones are no barrier.",
-                  content:
-                    "No matter where you are in the world, it’ll feel like we’re just around the corner. Our streamlined processes make time differences irrelevant.",
-                  delay: ".1s",
-                },
-                {
-                  title: "Impossible? Not in our world.",
-                  content:
-                    "We don’t believe in limitations. We bring your designs to life exactly as envisioned—no shortcuts, no compromises, and definitely no BS.",
-                  delay: ".3s",
-                },
-                {
-                  title: "Flexible work terms",
-                  content:
-                    "While we honor a fixed budget, we operate within a defined Time and Materials model. The terms we agree on will always be tailored to fit.",
-                  delay: ".5s",
-                },
-                {
-                  title: "Comprehensive services, all in one place",
-                  content:
-                    "From UI/UX and logo design to mobile app development, frontend and backend engineering, and ongoing technical support—we’ve got every aspect of your project covered.",
-                  delay: ".7s",
-                },
-              ].map((item, index) => (
-                <div
-                  key={index}
-                  className={`item ${index === 0 ? 'active' : ''} wow fadeInUp`}
-                  data-wow-delay={item.delay}
-                >
-                  <div onClick={openAccordion} className="title cursor-pointer d-flex justify-content-between align-items-center">
-                    <h6 className="mb-0">{item.title}</h6>
-                    <span className="ico ti-plus"></span>
-                  </div>
-                  <div
-                    className={`accordion-info${index === 0 ? ' active' : ''}`}
-                    style={{
-                      maxHeight: index === 0 ? '300px' : '0',
-                      overflow: 'hidden',
-                      transition: 'max-height 0.3s ease',
-                    }}
-                  >
-                    <p className="mt-15">{item.content}</p>
-                  </div>
-                </div>
-              ))}
+      {/* Accordion in full-width container with padding */}
+      <div
+        className="accordion-wrap"
+        style={{
+          maxWidth: '100%',
+        }}
+      >
+        {customData.map((item, i) => (
+          <div key={i} className="service-item">
+            <BouncingLine />
+            <div className="content-row">
+              <div className="icon">
+                <img
+                  src={item.icon || item.img}
+                  alt={`Icon ${item.title}`}
+                />
+              </div>
+              <h6
+                className="title"
+                dangerouslySetInnerHTML={{ __html: item.title }}
+                style={{
+                  maxWidth: '150px', // adjust width as needed
+                  wordBreak: 'break-word',
+                  whiteSpace: 'normal',
+                }}
+              ></h6>
+
+              <div className="text-content">
+                <p>{item.desc}</p>
+              </div>
             </div>
           </div>
-        </div>
+        ))}
       </div>
     </section>
   );

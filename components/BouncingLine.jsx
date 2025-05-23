@@ -5,7 +5,7 @@ import './BouncingLine.css';
 
 const clamp = (num, min, max) => Math.min(Math.max(num, min), max);
 
-const BouncingLine = ({ color = '#F45837', width = 1000, height = 200 }) => {
+const BouncingLine = ({ color = 'white', width = 1000, height = 100 }) => {
   const wrapperRef = useRef(null);
   const svgRef = useRef(null);
   const pathRef = useRef(null);

@@ -1,15 +1,19 @@
 'use client';
 import React from 'react';
-import { Navigation } from 'swiper';
+import { Navigation, Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 function Testimonials() {
   const swiperOptions = {
-    modules: [Navigation],
+    modules: [Navigation, Autoplay],
     slidesPerView: 'auto',
-
     spaceBetween: 30,
     loop: true,
+    autoplay: {
+      delay: 1, // very small delay for continuous effect
+      disableOnInteraction: false,
+    },
+    speed: 5000, // slide speed, adjust for slower/faster sliding
     breakpoints: {
       0: {
         slidesPerView: 1,
@@ -24,14 +28,13 @@ function Testimonials() {
         slidesPerView: 'auto',
       },
     },
-
     navigation: {
       nextEl: '.testim-modern .swiper-button-next',
       prevEl: '.testim-modern .swiper-button-prev',
     },
   };
   return (
-    <section className="testim-modern section-padding sub-bg bord-top-grd bord-bottom-grd">
+    <section className="testim-modern section-padding sub-bg bord-top-grd bord-bottom-grd" id='mainHomeTestimonials'>
       <div className="container">
         <div className="sec-head mb-80">
           <div className="d-flex align-items-center">

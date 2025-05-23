@@ -178,13 +178,12 @@ function Navbar() {
               className="nav-item dropdown"
             >
                         <a
-              
-              className="nav-link"
-              role="button"
-              onClick={() => handleScroll("mainHomeTestimonials")}
-            >
-                <span className="rolling-text">Testimonials</span>
-              </a>
+      className="nav-link"
+      role="button"
+      onClick={() => router.push('/page-about')}
+    >
+      <span className="rolling-text">Testimonials</span>
+    </a>
               {/* <div className="dropdown-menu">
                 <a className="dropdown-item" href="/blog-classic">
                   Blog Standerd

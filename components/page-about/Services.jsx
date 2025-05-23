@@ -26,11 +26,11 @@ function Services() {
             </div>
           </div>
         </div>
-                <BouncingLine />
 
         <div className="item">
           <div className="row md-marg align-items-end">
 
+                <BouncingLine />
             <div className="col-lg-4">
               <div>
                 <span className="num">01</span>
@@ -60,10 +60,10 @@ function Services() {
             </div>
           </div>
         </div>
-                <BouncingLine/>
 
         <div className="item">
           <div className="row md-marg align-items-end">
+                <BouncingLine/>
             <div className="col-lg-4">
               <div>
                 <span className="num">02</span>
@@ -93,10 +93,10 @@ function Services() {
             </div>
           </div>
         </div>
-                <BouncingLine />
 
         <div className="item pb-0">
           <div className="row md-marg align-items-end">
+                <BouncingLine />
             <div className="col-lg-4">
               <div>
                 <span className="num">03</span>
