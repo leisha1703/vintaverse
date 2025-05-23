@@ -1,4 +1,5 @@
 import React from 'react';
+import BouncingLine from '@/components/BouncingLine'; // adjust path if needed
 
 function Services() {
   return (
