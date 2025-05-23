@@ -86,5 +86,16 @@
   position: relative;
   pointer-events: none;
 }
+@keyframes float-hover {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(4px, -4px);
+  }
+}
+
+
+
 
 

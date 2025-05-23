@@ -906,6 +906,15 @@ figure {
   transform: translateY(-50%) rotate(360deg);
 }
 
+
+@keyframes bounce {
+  0%   { transform: translateY(0); }
+  30%  { transform: translateY(-6px); }
+  50%  { transform: translateY(0); }
+  70%  { transform: translateY(-3px); }
+  100% { transform: translateY(0); }
+}
+
 .vi-more .butn {
   font-size: 12px;
   font-weight: 500;
@@ -1930,7 +1939,10 @@ img.left {
 .underline a {
   text-decoration: underline !important;
 }
+.underline:hover{
+    animation: float-hover 0.6s ease-in-out infinite;
 
+}
 .underline span {
   text-decoration: underline;
 }
