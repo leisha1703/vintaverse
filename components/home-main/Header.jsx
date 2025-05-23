@@ -31,7 +31,7 @@ function Header() {
   return (
     <div
       className="header main-header bg-img valign"
-      data-background="/assets/imgs/background/bg5.jpg"
+      data-background="/assets/imgs/background/bggg.png"
       data-overlay-dark="7"
     >
       <div className="container ontop">

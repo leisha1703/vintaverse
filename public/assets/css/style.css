@@ -2805,6 +2805,18 @@ img.left {
 .ml-auto {
   margin-left: auto;
 }
+.view-all-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px; /* Adjust spacing as needed */
+  text-decoration: none;
+}
+
+.view-all-icon {
+  font-size: 1rem;  /* Adjust icon size */
+  line-height: 1;
+  display: inline-block;
+}
 
 .ml-0 {
   margin-left: 0 !important;
