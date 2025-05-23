@@ -9,13 +9,13 @@ function Intro() {
             <div className="img md-mb80">
               <div className="row">
                 <div className="col-6">
-                  <img src="/assets/imgs/intro/i1.jpg" alt="" />
+                  <img src="/assets/imgs/intro/j1.png" alt="" />
                   <div className="img-icon">
                     {/* <img src="/assets/imgs/arw0.png" alt="" /> */}
                   </div>
                 </div>
                 <div className="col-6 mt-40">
-                  <img src="/assets/imgs/intro/i2.jpg" alt="" />
+                  <img src="/assets/imgs/intro/j2.png" alt="" />
                 </div>
               </div>
             </div>

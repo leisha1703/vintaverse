@@ -78,7 +78,33 @@ function Navbar() {
           id="navbarSupportedContent"
         >
           <ul className="navbar-nav">
-           
+           <li
+              // onMouseLeave={handleDropdownMouseLeave}
+              // onMouseMove={handleDropdownMouseMove}
+              className="nav-item dropdown"
+            >
+                        <a
+      className="nav-link"
+      role="button"
+      onClick={() => router.push('/page-about')}
+    >
+      <span className="rolling-text">What We Do</span>
+    </a>
+              {/* <div className="dropdown-menu">
+                <a className="dropdown-item" href="/blog-classic">
+                  Blog Standerd
+                </a>
+                <a className="dropdown-item" href="/blog-grid-sidebar">
+                  Grid With Sidebar
+                </a>
+                <a className="dropdown-item" href="/blog-grid-3column">
+                  Grid Three Column
+                </a>
+                <a className="dropdown-item" href="/blog-details">
+                  Blog Details
+                </a>
+              </div> */}
+            </li>
             <li
               // onMouseLeave={handleDropdownMouseLeave}
               // onMouseMove={handleDropdownMouseMove}
@@ -172,33 +198,7 @@ function Navbar() {
                 </a>
               </div> */}
             </li>
-            <li
-              // onMouseLeave={handleDropdownMouseLeave}
-              // onMouseMove={handleDropdownMouseMove}
-              className="nav-item dropdown"
-            >
-                        <a
-      className="nav-link"
-      role="button"
-      onClick={() => router.push('/page-about')}
-    >
-      <span className="rolling-text">Testimonials</span>
-    </a>
-              {/* <div className="dropdown-menu">
-                <a className="dropdown-item" href="/blog-classic">
-                  Blog Standerd
-                </a>
-                <a className="dropdown-item" href="/blog-grid-sidebar">
-                  Grid With Sidebar
-                </a>
-                <a className="dropdown-item" href="/blog-grid-3column">
-                  Grid Three Column
-                </a>
-                <a className="dropdown-item" href="/blog-details">
-                  Blog Details
-                </a>
-              </div> */}
-            </li>
+            
             {/* <li className="nav-item">
               <a className="nav-link" href="/page-contact">
                 <span className="rolling-text">Contact Us</span>

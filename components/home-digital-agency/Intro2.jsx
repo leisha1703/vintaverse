@@ -41,7 +41,7 @@ function Intro2() {
   });
 
   return (
-    <section className="intro-accord" style={{ marginTop: '100px', marginBottom: '100px' }}>
+    <section className="intro-accord" style={{ marginTop: '200px', marginBottom: '100px' }}>
       {/* Header in standard-width container */}
       <div className="container">
         <div className="sec-head mb-80">
@@ -53,7 +53,7 @@ function Intro2() {
             </h2>
           </div>
           <h6 className="sub-title main-color d-flex align-items-center">
-            <span>The creative process behind our digital marketing</span>
+            <span>WE CREATE MEMORABLE WEBSITES</span>
             <span className="thin"></span>
           </h6>
         </div>
