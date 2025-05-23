@@ -15,9 +15,10 @@ function Intro() {
               <div className="col-md-6">
                 <div className="text">
                   <h3 className="mb-30">
-                    We craft iconic digital experiences for:{' '}
-                    <span className="fw-300">Hotshot brands making headlines</span>{' '}
-                    <span className="fw-300">Newbie startups with fire in their belly</span>
+                    We bring digital visions to life —
+  {' '}
+                    <span className="fw-300">for the bold, the brave, and the </span>{' '}
+                    <span className="fw-300">next big thing.</span>
                   </h3>
                   <p>
                     Whether you're building your story or rebranding
