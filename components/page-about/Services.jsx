@@ -26,7 +26,7 @@ function Services() {
             </div>
           </div>
         </div>
-                <BouncingLine width={window.innerWidth} />
+                <BouncingLine />
 
         <div className="item">
           <div className="row md-marg align-items-end">
@@ -60,7 +60,7 @@ function Services() {
             </div>
           </div>
         </div>
-                <BouncingLine width={window.innerWidth} />
+                <BouncingLine/>
 
         <div className="item">
           <div className="row md-marg align-items-end">
@@ -93,7 +93,7 @@ function Services() {
             </div>
           </div>
         </div>
-                <BouncingLine width={window.innerWidth} />
+                <BouncingLine />
 
         <div className="item pb-0">
           <div className="row md-marg align-items-end">
