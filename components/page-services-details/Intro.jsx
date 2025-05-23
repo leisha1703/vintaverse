@@ -11,22 +11,19 @@ function Intro() {
                 <div>
                   <h6 className="sub-title main-color mb-15">Description</h6>
                   <h3 className="mb-30">
-                    We believe in the power of{' '}
+                    We believe that every{' '}
                     <span className="fw-300">individual</span>{' '}
-                    <span className="fw-300">contribution.</span>
+                    <span className="fw-300">contribution shapes better experiences.</span>
                   </h3>
                 </div>
               </div>
               <div className="col-md-6">
                 <div className="text">
                   <p className="mb-15">
-                    We back the founders of new forms of network, digital
-                    organisations that harness the talents of individuals for
-                    the benefit of the collective.
+                    We believe great design is about simplicity, clarity, and purpose. We create user experiences that are intuitive and seamless, removing barriers so users can focus on their goals without distraction.
                   </p>
                   <p>
-                    Taken possession of my entire soul, like these sweet
-                    mornings of spring which i enjoy with my whole.
+                    We prioritize clean, thoughtful interfaces that balance aesthetics with functionality. 
                   </p>
 
                   <div className="mt-30">

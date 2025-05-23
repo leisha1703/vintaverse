@@ -5,6 +5,8 @@ import data from '@/data/portfolios/works1';
 import { Navigation, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import arrowIcon from '@/public/assets/imgs/upArrow.svg';
+import Link from 'next/link';
+
 function Portfolio() {
   const marquess = ['Our Portfolio']; // Replace with your actual array
   const AllMarquess = Array(10).fill(marquess).flat();
@@ -53,11 +55,30 @@ function Portfolio() {
           <div className="col-lg-3 d-flex align-items-end">
             <div className="text pb-100">
               <ul>
-                <li className='d-flex align-items-center gap-3'><Image src={arrowIcon} alt='up-arrow' className='up-arrow'/><p>Mails Manage</p></li>
-                <li className='d-flex align-items-center gap-3'><Image src={arrowIcon} alt='up-arrow' className='up-arrow'/><p>Grocey App</p></li>
-                <li className='d-flex align-items-center gap-3 text-nowrap'><Image src={arrowIcon} alt='up-arrow' className='up-arrow'/><p>Pick and Delivery app</p></li>
-                <li className='d-flex align-items-center gap-3'><Image src={arrowIcon} alt='up-arrow' className='up-arrow'/><p>Dating App</p></li>
-                <li className='d-flex align-items-center gap-3'><Image src={arrowIcon} alt='up-arrow' className='up-arrow'/><p>Fintech App</p></li>
+                <li className='d-flex align-items-center gap-3'>
+                  <Image src={arrowIcon} alt='up-arrow' className='up-arrow cursor-pointer' />
+                  <Link href="/project-details">
+                    <p>Sizzle App</p>
+                  </Link>
+                </li>
+                <li className='d-flex align-items-center gap-3'>
+                  <Image src={arrowIcon} alt='up-arrow' className='up-arrow cursor-pointer' />
+                  <Link href="/project-details2">
+                    <p>Fitness</p>
+                  </Link>
+                </li>
+                <li className='d-flex align-items-center gap-3 text-nowrap'>
+                  <Image src={arrowIcon} alt='up-arrow' className='up-arrow cursor-pointer' />
+                  <Link href="/project-details4">
+                    <p>WPCenter</p>
+                  </Link>
+                </li>
+                <li className='d-flex align-items-center gap-3'>
+                  <Image src={arrowIcon} alt='up-arrow' className='up-arrow cursor-pointer' />
+                  <Link href="/project-details3">
+                    <p>Live Streaming App</p>
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>

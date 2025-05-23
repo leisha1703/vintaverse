@@ -1,16 +1,10 @@
-'use client';
 import React from 'react';
 import data from '@/data/services';
+import BouncingLine from '@/components/BouncingLine'; // adjust path if needed
 
 function Services() {
-  function handleActiveSer(event) {
-    document.querySelectorAll('.serv-boxs .item').forEach((serv) => {
-      serv.classList.remove('active');
-    });
-    event.currentTarget.classList.add('active');
-  }
   return (
-    <section className="services-modern section-padding">
+    <section className="services-wire section-padding">
       <div className="container">
         <div className="sec-head mb-80">
           <div className="row">
@@ -29,30 +23,52 @@ function Services() {
           </div>
         </div>
       </div>
-      <div className="container-fluid rest">
-        <div className="serv-boxs">
-          {data.map((item, i) => (
-            <div
-              key={i}
-              onClick={handleActiveSer}
-              className={`item ${i == 0 && 'active'}`}
-            >
-              <div className="icon-img-60">
-                <img src={item.img} alt="" />
+
+      {/* <div className="container-fluid rest">
+        {data.map((item, i) => (
+          <div key={i} className="service-item">
+            <BouncingLine />
+
+            <div className="content-row">
+              <div className="icon">
+                <img src={item.img} alt={`Icon ${item.title}`} />
               </div>
-              <div>
-                <div className="text mb-30">
-                  <p>{item.desc} </p>
-                </div>
-                <div className="d-flex align-items-center">
-                  <h6 className="sub-title">{item.title}</h6>
-                  <span className="ml-auto fz-13">0{i + 1}</span>
-                </div>
+              <div className="text-content">
+                <h6>{item.title}</h6>
               </div>
+                <p>{item.desc}</p>
             </div>
-          ))}
+
+           
+          </div>
+        ))}
+      </div> */}
+
+
+      <div className="container-fluid rest">
+  {data.map((item, i) => (
+    <div key={i} className="service-item">
+      <BouncingLine />
+
+      <div className="content-row">
+        <div className="icon">
+          <img src={item.img} alt={`Icon ${item.title}`} />
+        </div>
+
+<h6
+  className="title"
+  dangerouslySetInnerHTML={{ __html: item.title }}
+></h6>
+
+        <div className="text-content">
+          <p>{item.desc}</p>
         </div>
       </div>
+    </div>
+  ))}
+</div>
+
+
     </section>
   );
 }

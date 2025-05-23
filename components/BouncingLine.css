@@ -1,0 +1,17 @@
+.bouncing-line-wrapper {
+  width: 70%;
+  margin: 20px auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.bouncing-line {
+  position: relative;
+  pointer-events: none;
+  will-change: transform;
+  shape-rendering: geometricPrecision;
+}
+
+.bouncing-line path {
+  transition: stroke 0.3s ease;
+}

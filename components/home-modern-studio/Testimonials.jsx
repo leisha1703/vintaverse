@@ -70,12 +70,10 @@ function Testimonials() {
             <SwiperSlide>
               <div className="item">
                 <div className="cont">
-                  <h6 className="sub-title mb-15">Design Quality</h6>
+                  <h6 className="sub-title mb-15">Elegance by Design</h6>
                   <div className="text">
                     <p>
-                      “ I have been hiring people in this space for a number of
-                      years and I have never seen this level of
-                      professionalism.”
+                      “ I've been hiring professionals in this field for years, and I've never encountered the level of professionalism that Vintaverse delivers.”
                     </p>
                   </div>
                 </div>
@@ -87,9 +85,9 @@ function Testimonials() {
                       </div>
                     </div>
                     <div className="ml-20">
-                      <h6 className="fz-18">Haitham Al-Dukhin</h6>
+                      <h6 className="fz-18">Emily Chen</h6>
                       <span className="p-color opacity-8 fz-15 mt-5">
-                        Envato Customer
+                        Design Director
                       </span>
                     </div>
                   </div>
@@ -99,11 +97,10 @@ function Testimonials() {
             <SwiperSlide>
               <div className="item">
                 <div className="cont">
-                  <h6 className="sub-title mb-15">Design Quality</h6>
+                  <h6 className="sub-title mb-15">Visuals with Vision</h6>
                   <div className="text">
                     <p>
-                      “ I have been hiring people in this space for a number of
-                      years and I have never seen this level of professionalism.
+                      “ After years of hiring in this industry, I can confidently say that the professionalism Vintaverse brings is truly unmatched.
                       ”
                     </p>
                   </div>
@@ -116,9 +113,9 @@ function Testimonials() {
                       </div>
                     </div>
                     <div className="ml-20">
-                      <h6 className="fz-18">Haitham Al-Dukhin</h6>
+                      <h6 className="fz-18">Marcus Allen</h6>
                       <span className="p-color opacity-8 fz-15 mt-5">
-                        Envato Customer
+                       Senior UX Designer
                       </span>
                     </div>
                   </div>
@@ -128,11 +125,10 @@ function Testimonials() {
             <SwiperSlide>
               <div className="item">
                 <div className="cont">
-                  <h6 className="sub-title mb-15">Design Quality</h6>
+                  <h6 className="sub-title mb-15">Crafted to Impress</h6>
                   <div className="text">
                     <p>
-                      “ I have been hiring people in this space for a number of
-                      years and I have never seen this level of professionalism.
+                      “ In all my years of working with professionals in this space, Vintaverse stands out as the most professional team I've encountered.
                       ”
                     </p>
                   </div>
@@ -145,9 +141,9 @@ function Testimonials() {
                       </div>
                     </div>
                     <div className="ml-20">
-                      <h6 className="fz-18">Haitham Al-Dukhin</h6>
+                      <h6 className="fz-18">Liam Patel</h6>
                       <span className="p-color opacity-8 fz-15 mt-5">
-                        Envato Customer
+                        Brand Experience Lead
                       </span>
                     </div>
                   </div>

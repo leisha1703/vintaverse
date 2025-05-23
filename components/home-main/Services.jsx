@@ -1,14 +1,23 @@
 'use client';
 import React from 'react';
 import data from '@/data/services';
-import { Navigation } from 'swiper';
+import { Navigation, Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
+
 function Services() {
   const swiperOptions = {
-    modules: [Navigation],
+    modules: [Navigation, Autoplay],
     loop: true,
     spaceBetween: 40,
     slidesPerView: 3,
+    speed: 4000, // controls scroll speed
+    autoplay: {
+      delay: 0,
+      disableOnInteraction: false,
+      pauseOnMouseEnter: true,
+    },
+    freeMode: true,
+    freeModeMomentum: false,
     breakpoints: {
       0: {
         slidesPerView: 1,
@@ -29,8 +38,9 @@ function Services() {
       prevEl: '.services .swiper-button-prev',
     },
   };
+
   return (
-    <section className="services section-padding" id='mainHomeServices'>
+    <section className="services section-padding" id="mainHomeServices">
       <div className="container">
         <div className="sec-head mb-80">
           <div className="d-flex align-items-center">

@@ -2,6 +2,7 @@
 import React, { useEffect, useLayoutEffect } from 'react';
 import { gsap } from 'gsap';
 import loadBackgroudImages from '@/common/loadBackgroudImages';
+
 function Header() {
   useLayoutEffect(() => {
     const tl = gsap.timeline();
@@ -15,9 +16,18 @@ function Header() {
 
     return () => tl.kill();
   }, []);
+
   useEffect(() => {
     loadBackgroudImages();
   }, []);
+
+  const scrollToIntro = () => {
+    const section = document.getElementById('mainHomeAboutUs');
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div
       className="header main-header bg-img valign"
@@ -28,18 +38,17 @@ function Header() {
         <div className="row">
           <div className="col-lg-11">
             <div className="caption">
-              <h1>Best way to build</h1>
+              <h1>Your creative partner in the</h1>
               <div className="d-flex align-items-end">
                 <div>
                   <h1 className="nowrap">
-                    <span className="main-color">great</span> website.
+                    <span className="main-color">digital</span> world.
                   </h1>
                 </div>
                 <div>
                   <div className="text ml-30">
                     <p>
-                    We empower founders to build digital communities and platforms 
-                    that unite individual creativity for collective growth{' '}
+                      Vintaverse is a creative digital agency specializing in branding, UI/UX design, mobile and web development.
                     </p>
                   </div>
                 </div>
@@ -47,10 +56,16 @@ function Header() {
             </div>
           </div>
         </div>
+
+        {/* Arrow + Info Row */}
         <div className="row mt-80">
           <div className="col-lg-6 order-md-2">
-            <div className="icon-img">
-              <img src="/assets/imgs/icon-img/arrow-down-big.png" alt="" />
+            <div className="icon-img" onClick={scrollToIntro}>
+              <img
+                src="/assets/imgs/icon-img/arrow-down-big.png"
+                alt="Scroll down"
+                className="bounce-arrow"
+              />
             </div>
           </div>
           <div className="col-lg-6 d-flex justify-content-end order-md-1">

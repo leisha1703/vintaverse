@@ -1,16 +1,21 @@
 [
   {
-    "img": "/assets/imgs/team/t1.1.png",
+    "img": "/assets/imgs/team/leisha2.jpg",
     "name": "Leisha",
-    "subName": "WordPress Developer"
+    "subName": "WordPress Developer",
+    "social": {
+      "facebook": "https://facebook.com/leisha",
+      "behance": "https://behance.net/leisha",
+      "instagram": "https://instagram.com/leisha"
+    }
   },
   {
-    "img": "/assets/imgs/team/t2.2.png",
+    "img": "/assets/imgs/team/manoj.jpg",
     "name": "Manoj Kumar",
     "subName": "WordPress Developer"
   },
   {
-    "img": "/assets/imgs/team/t3.3.png",
+    "img": "/assets/imgs/team/reza.jpg",
     "name": "Reza Hashmi",
     "subName": "UI/UX  DESIGNER"
   }

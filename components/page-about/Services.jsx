@@ -111,7 +111,7 @@ function Services() {
             <div className="col-lg-4">
               <div className="img fit-img">
                 <img src="/assets/imgs/serv-img/seo.jpg" alt="" />
-                <a href="/page-services-details">
+                <a href="/seo-marketing">
                   <span className="ti-arrow-top-right"></span>
                 </a>
               </div>

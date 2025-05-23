@@ -1,21 +1,21 @@
 [
   {
-    "title": "Web Site Design",
+    "title": "WebSite Design",
     "img": "/assets/imgs/serv-icons/3.png",
     "desc": " Your site is your digital home — we design it to be bold, welcoming, and unforgettable from first click to last.",
-    "link": "/page-services-details"
+    "link": "/website-design"
   },
   {
-    "title": "Web Developments",
+    "title": "Web<br>Developments",
     "img": "/assets/imgs/serv-icons/4.png",
     "desc": "Every line of code counts — we build fast, functional, and secure websites that perform flawlessly and reflect your brand.",
-    "link": "/page-services-details"
+    "link": "/web-developments"
   },
   {
     "title": "Mobile Design",
     "img": "/assets/imgs/serv-icons/5.png",
-    "desc": "Designed for thumbs, built for speed — we create mobile-first websites that are fast, functional,beautifully responsive, and brand-focused.",
-    "link": "/page-services-details"
+    "desc": "Built for speed we create mobile-first websites that are fast, functional, beautifully responsive.",
+    "link": "/mobile-design"
   },
   {
     "title": "UI/UX Design",

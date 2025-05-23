@@ -7,7 +7,7 @@ import Footer from '@/components/common/Footer';
 import Marq2 from '@/components/common/Marq2';
 import Navbar from '@/components/common/Navbar';
 import Script from 'next/script';
-import Blog from '@/components/home-main/Blog';
+//import Blog from '@/components/home-main/Blog';
 import Clients from '@/components/common/Clients';
 import Team from '@/components/home-modern-studio/Team';
 import Testimonials from '@/components/home-modern-studio/Testimonials';
@@ -48,7 +48,7 @@ export default function Home() {
             <Team />
             <Testimonials />
             <Clients />
-            <Blog />
+            {/* <Blog /> */}
             <Marq2 />
           </main>
           <Footer />

@@ -5,7 +5,7 @@ function Wroks2() {
     <div className="section-padding pt-0">
       <div className="container">
         <div className="img">
-          <img src="/assets/imgs/works/3/6.jpg" alt="" />
+          <img src="/assets/imgs/works/3/gg5.png" alt="" />
         </div>
       </div>
     </div>

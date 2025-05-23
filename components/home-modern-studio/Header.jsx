@@ -143,7 +143,7 @@ function Header() {
               <div className="text">
                 <h5 className="main-color mb-15">01</h5>
                 <h1>
-                  Mails <br /> Mobile app
+                  Dating <br /> Mobile app
                 </h1>
                 <a
                   href="/project-details"
@@ -162,7 +162,7 @@ function Header() {
               <div className="text">
                 <h5 className="main-color mb-15">02</h5>
                 <h1>
-                  Mails <br /> Mobile app
+                  Dating <br /> Mobile app
                 </h1>
                 <a
                   href="/project-details"
@@ -181,7 +181,7 @@ function Header() {
               <div className="text">
                 <h5 className="main-color mb-15">03</h5>
                 <h1>
-                  Mails <br /> Mobile app
+              Dating <br /> Mobile app
                 </h1>
                 <a
                   href="/project-details"

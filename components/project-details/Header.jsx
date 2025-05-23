@@ -21,14 +21,14 @@ function Header() {
   return (
     <div
       className="header header-project bg-img d-flex align-items-end"
-      data-background="/assets/imgs/works/3/1.jpg"
+      data-background="/assets/imgs/works/3/ss1.png"
       data-overlay-dark="9"
     >
       <div className="container">
         <div className="row">
           <div className="col-12">
             <div className="caption">
-              <h1>Technology Process</h1>
+              <h1>Dating App</h1>
             </div>
           </div>
         </div>

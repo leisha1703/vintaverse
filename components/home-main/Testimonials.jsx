@@ -14,8 +14,8 @@ function Testimonials() {
     },
 
     navigation: {
-      nextEl: '.testimonials-minim .swiper-button-next',
-      prevEl: '.testimonials-minim .swiper-button-prev',
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
     },
   };
   return (
@@ -51,7 +51,8 @@ function Testimonials() {
                       <div className="item">
                         <div className="content">
                           <div className="text">
-                            <p className="fz-30">{item.desc} </p>
+<p className="text-lg">{item.desc}</p>
+
                           </div>
                           <div className="info d-flex align-items-center pt-40 mt-40 bord-thin-top">
                             <div>

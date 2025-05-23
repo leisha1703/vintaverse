@@ -15,7 +15,7 @@ function Team() {
               </h3>
             </div>
             <div className="ml-auto vi-more">
-              <a href="/page-team" className="butn butn-sm butn-bord radius-30">
+              <a href="/page-contact" className="butn butn-sm butn-bord radius-30">
                 <span>Join to us</span>
               </a>
               <span className="icon ti-arrow-top-right"></span>
@@ -32,7 +32,7 @@ function Team() {
                     <div className="social">
                       <div className="links">
                         <a href="#0">
-                          <i className="fab fa-facebook-f">faaaa</i>
+                          <i className="fab fa-facebook-f"></i>
                         </a>
                         <a href="#0">
                           <i className="fab fa-behance"></i>

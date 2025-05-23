@@ -18,3 +18,73 @@
 .chat-icon img {
     max-width: 30px;
 }
+
+
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+}
+
+.bounce-arrow {
+  animation: bounce 1.8s infinite ease-in-out;
+  cursor: pointer;
+}
+
+.services-reimagined {
+  padding: 60px 0;
+}
+
+.service-row {
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.bounce-line {
+  height: 2px;
+  background: #000;
+  margin-bottom: 20px;
+  transition: all 0.3s ease-in-out;
+  animation: none;
+}
+
+.service-row:hover .bounce-line {
+  animation: bounceLine 1s ease-in-out;
+}
+
+@keyframes bounceLine {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-4px);
+  }
+  50% {
+    transform: translateY(2px);
+  }
+  75% {
+    transform: translateY(-2px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+.bouncing-line-wrapper {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  margin: 20px 0;
+}
+
+.bouncing-line {
+  position: relative;
+  pointer-events: none;
+}
+
+
