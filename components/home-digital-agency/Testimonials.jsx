@@ -51,9 +51,9 @@ function Testimonials() {
                       <div className="content">
                         <div className="text">
                           <p  style={{fontSize: '16px',}}>
-                           My name is Vinta Kumari. I am a UX/UI Designer.
-I have worked in the IT sector for the last 8+ years and have solid experience in creating website design, branding graphics, mobile application UI, and Professional Presentations. I have designed a wide range of projects in graphic, print, and web and completed more than 500 Jobs of work. I am an experienced graphics designer having expertise in both IOS / Android apps and web design. I would like to help you in designing your product with the custom cool features UI/UX and attractive colours for a better user experience. I have expertise in Photoshop, Illustrate design, Sketch, Figma and vector files. 
-                          </p>
+                           With over 8+ years of experience in the IT sector, Vinta Kumari is a seasoned UI/UX designer known for crafting intuitive and visually compelling digital experiences. Her expertise spans across website design, mobile app UI (both iOS and Android), branding graphics, and professional presentations.
+Vinta has led the creative direction for over 1500+ projects, combining deep user research with elegant design systems to elevate brands and products. Proficient in tools like Figma, Sketch, Adobe Photoshop, and Illustrator, she brings a modern, user-centered approach to every interface.
+Whether designing complex applications or marketing visuals, Vinta is passionate about turning ideas into meaningful user journeys with high aesthetic and functional value.                          </p>
                         </div>
                         <div className="info d-flex align-items-center pt-40 mt-40 bord-thin-top">
                           <div>
