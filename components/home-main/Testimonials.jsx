@@ -25,7 +25,7 @@ function Testimonials() {
           <div className="col-lg-4 md-mb50">
             <div className="img-full">
               <div className="fit-img">
-                <img src="/assets/imgs/testim/bg.jpg" alt="" />
+                <img src="/assets/imgs/testim/100.jpg" alt="" />
               </div>
               <div className="fix-img">
                 <img src="/assets/imgs/arw1.svg" alt="icon" />
