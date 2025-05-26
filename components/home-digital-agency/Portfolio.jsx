@@ -42,7 +42,8 @@ function Portfolio() {
 >
                 {/* <span>View All</span> */}
               </a>
-              <span className="icon ti-arrow-top-right"></span>
+              {/* <span className="icon ti-arrow-top-right"></span> */}
+              
             </div>
           </div>
         </div>

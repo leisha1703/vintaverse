@@ -22,7 +22,7 @@ function Services() {
               >
                 <span>View All</span>
               </a>
-              <span className="icon ti-arrow-top-right"></span>
+              {/* <span className="icon ti-arrow-top-right"></span> */}
             </div>
           </div>
         </div>
@@ -101,7 +101,7 @@ function Services() {
               <div>
                 <span className="num">03</span>
                 <div>
-                  <span className="sub-title main-color mb-10">Web Design</span>
+                  <span className="sub-title main-color mb-10">Digital Marketing</span>
                   <h2>
                     SEO /<span className="fw-200">Marketing</span>
                   </h2>
@@ -119,6 +119,37 @@ function Services() {
             <div className="col-lg-4">
               <div className="img fit-img">
                 <img src="/assets/imgs/serv-img/seo.jpg" alt="" />
+                <a href="/seo-marketing">
+                  <span className="ti-arrow-top-right"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="item pb-0">
+          <div className="row md-marg align-items-end">
+                <BouncingLine />
+            <div className="col-lg-4">
+              <div>
+                <span className="num">04</span>
+                <div>
+                  <span className="sub-title main-color mb-10">Development</span>
+                  <h2>
+                    Web<span className="fw-200">Development</span>
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4">
+              <div className="text md-mb80">
+                <p>
+               Building powerful websites that attract visitors, deliver smooth experiences, and turn browsers into lifelong users through smart design and data insights.
+                </p>
+              </div>
+            </div>
+            <div className="col-lg-4">
+              <div className="img fit-img">
+                <img src="/assets/imgs/serv-img/web.jpg" alt="" />
                 <a href="/seo-marketing">
                   <span className="ti-arrow-top-right"></span>
                 </a>

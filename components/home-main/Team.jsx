@@ -18,7 +18,8 @@ function Team() {
               <a href="/page-team" className="butn butn-sm butn-bord radius-30">
                 <span>Join to us</span>
               </a>
-              <span className="icon ti-arrow-top-right"></span>
+              {/* <span className="icon ti-arrow-top-right"></span> */}
+              
             </div>
           </div>
         </div>

@@ -13,8 +13,8 @@ const BouncingLine = ({ color = 'white', width = 1000, height = 100 }) => {
   const [isHovering, setIsHovering] = useState(false);
   const mouseMoveTween = useRef(null);
 
-  // Object to animate and sync with mouseY.current
-  const mouseYAnim = useRef({ current: height });
+  // Simple object (not a ref) for GSAP animation
+  const mouseYAnim = { value: height };
 
   useEffect(() => {
     let rafId;
@@ -58,66 +58,64 @@ const BouncingLine = ({ color = 'white', width = 1000, height = 100 }) => {
   };
 
   const handleMouseLeave = () => {
-    // Delay turning off hovering to keep stickiness longer
     setTimeout(() => setIsHovering(false), 900);
 
-    // Start vibration animation timeline
     const tl = gsap.timeline();
 
-    tl.to(mouseYAnim.current, {
-      current: height + 100,
+    tl.to(mouseYAnim, {
+      value: height + 100,
       duration: 0.3,
       ease: 'power3.in',
       onUpdate: () => {
-        mouseY.current = mouseYAnim.current.current;
+        mouseY.current = mouseYAnim.value;
       },
     })
-      .to(mouseYAnim.current, {
-        current: height - 80,
+      .to(mouseYAnim, {
+        value: height - 80,
         duration: 0.3,
         ease: 'power4.out',
         onUpdate: () => {
-          mouseY.current = mouseYAnim.current.current;
+          mouseY.current = mouseYAnim.value;
         },
       })
-      .to(mouseYAnim.current, {
-        current: height + 60,
+      .to(mouseYAnim, {
+        value: height + 60,
         duration: 0.25,
         ease: 'power2.inOut',
         onUpdate: () => {
-          mouseY.current = mouseYAnim.current.current;
+          mouseY.current = mouseYAnim.value;
         },
       })
-      .to(mouseYAnim.current, {
-        current: height - 40,
+      .to(mouseYAnim, {
+        value: height - 40,
         duration: 0.25,
         ease: 'power2.inOut',
         onUpdate: () => {
-          mouseY.current = mouseYAnim.current.current;
+          mouseY.current = mouseYAnim.value;
         },
       })
-      .to(mouseYAnim.current, {
-        current: height + 20,
+      .to(mouseYAnim, {
+        value: height + 20,
         duration: 0.2,
         ease: 'power2.inOut',
         onUpdate: () => {
-          mouseY.current = mouseYAnim.current.current;
+          mouseY.current = mouseYAnim.value;
         },
       })
-      .to(mouseYAnim.current, {
-        current: height - 10,
+      .to(mouseYAnim, {
+        value: height - 10,
         duration: 0.2,
         ease: 'power2.inOut',
         onUpdate: () => {
-          mouseY.current = mouseYAnim.current.current;
+          mouseY.current = mouseYAnim.value;
         },
       })
-      .to(mouseYAnim.current, {
-        current: height,
+      .to(mouseYAnim, {
+        value: height,
         duration: 0.5,
         ease: 'elastic.out(1, 0.4)',
         onUpdate: () => {
-          mouseY.current = mouseYAnim.current.current;
+          mouseY.current = mouseYAnim.value;
         },
       });
   };
@@ -142,7 +140,7 @@ const BouncingLine = ({ color = 'white', width = 1000, height = 100 }) => {
           ref={pathRef}
           d={`M 0 ${height} Q ${width / 2} ${height} ${width} ${height}`}
           stroke={color}
-          strokeWidth="3"
+          
           fill="transparent"
         />
       </svg>
