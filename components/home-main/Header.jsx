@@ -67,8 +67,7 @@ function Header() {
                   <div>
                     <div className="text ml-30">
                       <p>
-                        We empower founders to build digital communities and platforms
-                        that unite individual creativity for collective growth{' '}
+                        Vintaverse is a creative digital agency specializing in branding, UI/UX design,  mobile and web development.{' '}
                       </p>
                     </div>
                   </div>
