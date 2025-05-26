@@ -84,7 +84,7 @@ As the CEO of Vintaverse, Diwakar is not just a leader but a driving force behin
                         <div className="info d-flex align-items-center pt-40 mt-40 bord-thin-top">
                           <div>
                             <div className="fit-img circle">
-                              <img src="/assets/imgs/team/ddd.jpg" alt="" />
+                              <img src="/assets/imgs/team/diwakar.jpg" alt="" />
                             </div>
                           </div>
                           <div className="ml-20">
