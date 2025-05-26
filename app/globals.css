@@ -33,6 +33,7 @@
 .bounce-arrow {
   animation: bounce 1.8s infinite ease-in-out;
   cursor: pointer;
+  
 }
 
 .services-reimagined {

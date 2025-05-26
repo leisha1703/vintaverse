@@ -31,17 +31,25 @@ function Team() {
                     <img src={item.img} alt="" />
                     <div className="social">
                       <div className="links">
-                        <a href="#0">
-                          <i className="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#0">
-                          <i className="fab fa-behance"></i>
-                        </a>
-                        <a href="#0">
-                          <i className="fab fa-instagram"></i>
-                        </a>
+                        {item.social?.github && (
+                          <a href={item.social.github} target="_blank" rel="noopener noreferrer">
+                            <i className="fab fa-github"></i>
+                          </a>
+                        )}
+                        {item.social?.linkedin && (
+                          <a href={item.social.linkedin} target="_blank" rel="noopener noreferrer">
+                            <i className="fab fa-linkedin-in"></i>
+                          </a>
+                        )}
+                        {item.social?.instagram && (
+                          <a href={item.social.instagram} target="_blank" rel="noopener noreferrer">
+                            <i className="fab fa-instagram"></i>
+                          </a>
+                        )}
                       </div>
                     </div>
+
+
                   </div>
                   <div className="circle-blur">
                     <img src="/assets/imgs/patterns/blur1.png" alt="" />

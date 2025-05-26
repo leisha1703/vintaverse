@@ -3898,7 +3898,11 @@ body.loaded {
 }
 
 .intro-accord {
+  border-radius:75px 75px 0 0;
   position: relative;
+  background-color: #fff;
+  color: #000;
+  padding-top: 50px;;
 }
 .intro-accord .wide-container {
   width: 100px;
@@ -5053,7 +5057,14 @@ footer.clean-footer.crev .circle-blur {
   margin: 0;
   z-index: 9;
 }
-
+.modern-slider .swiper-controls .swiper-button-prev:hover,
+.modern-slider .swiper-controls .swiper-button-next:hover {
+  
+  color: #0f0f0f;
+ 
+  background: #fff;
+  
+}
 .modern-slider .swiper-controls .swiper-button-prev:after,
 .modern-slider .swiper-controls .swiper-button-next:after {
   display: none;
@@ -6543,10 +6554,16 @@ footer.clean-footer.crev .circle-blur {
   color: #fff;
   line-height: 1.4;
   word-break: break-word;
-  width: 616px;
+  width: 450px;
 }
 
-
+.text-content2 p {
+  font-size: 26px;
+  color: #000;
+  line-height: 1.4;
+  word-break: break-word;
+  width: 450px;
+}
 
 .services-clas .item {
   padding: 40px 30px;

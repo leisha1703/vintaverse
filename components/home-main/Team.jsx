@@ -1,5 +1,6 @@
 import React from 'react';
 import data from '@/data/team';
+
 function Team() {
   return (
     <section className="team section-padding" id='mainHomeTestimonials'>
@@ -18,11 +19,10 @@ function Team() {
               <a href="/page-team" className="butn butn-sm butn-bord radius-30">
                 <span>Join to us</span>
               </a>
-              {/* <span className="icon ti-arrow-top-right"></span> */}
-              
             </div>
           </div>
         </div>
+
         <div className="row">
           {data.map((item, i) => (
             <div key={i} className="col-lg-4">
@@ -34,19 +34,29 @@ function Team() {
                     <h6 className="fz-18">{item.name}</h6>
                   </div>
                 </div>
+
+                {/* ✅ Updated Social Links */}
                 <div className="social">
                   <div className="links">
-                  <a href="#0">
-                      <i className="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="#0">
-                      <i className="fab fa-behance"></i>
-                    </a>
-                    <a href="#0">
-                      <i className="fab fa-instagram"></i>
-                    </a>
+                 {item.social?.github && (
+                      <a href={item.social.github} target="_blank" rel="noopener noreferrer">
+                        <i className="fab fa-github"></i>
+                      </a>
+                    )}
+                    {item.social?.linkedin && (
+                      <a href={item.social.linkedin} target="_blank" rel="noopener noreferrer">
+                        <i className="fab fa-linkedin-in"></i>
+                      </a>
+                    )}
+                    {item.social?.instagram && (
+                      <a href={item.social.instagram} target="_blank" rel="noopener noreferrer">
+                        <i className="fab fa-instagram"></i>
+                      </a>
+                    )}
+                    
                   </div>
                 </div>
+                {/* End social section */}
               </div>
             </div>
           ))}

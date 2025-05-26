@@ -150,7 +150,7 @@ function Services() {
             <div className="col-lg-4">
               <div className="img fit-img">
                 <img src="/assets/imgs/serv-img/web.jpg" alt="" />
-                <a href="/seo-marketing">
+                <a href="/web-developments">
                   <span className="ti-arrow-top-right"></span>
                 </a>
               </div>

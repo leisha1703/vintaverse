@@ -2,6 +2,7 @@
 import React from 'react';
 import data from '@/data/services';
 import { Navigation, Autoplay } from 'swiper';
+
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 function Services() {
@@ -53,14 +54,14 @@ function Services() {
               </h3>
             </div>
             <div className="ml-auto">
-              <div className="swiper-arrow-control">
+              {/* <div className="swiper-arrow-control">
                 <div className="swiper-button-prev">
                   <span className="ti-arrow-left"></span>
                 </div>
                 <div className="swiper-button-next">
                   <span className="ti-arrow-right"></span>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

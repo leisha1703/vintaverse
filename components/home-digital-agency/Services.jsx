@@ -24,51 +24,29 @@ function Services() {
         </div>
       </div>
 
-      {/* <div className="container-fluid rest">
+      <div className="container-fluid rest">
         {data.map((item, i) => (
           <div key={i} className="service-item">
             <BouncingLine />
 
-            <div className="content-row">
-              <div className="icon">
-                <img src={item.img} alt={`Icon ${item.title}`} />
-              </div>
-              <div className="text-content">
-                <h6>{item.title}</h6>
-              </div>
-                <p>{item.desc}</p>
-            </div>
-
-           
-          </div>
-        ))}
-      </div> */}
-
-
-      <div className="container-fluid rest">
-  {data.map((item, i) => (
-    <div key={i} className="service-item">
-      <BouncingLine />
-
-      <div className="content-row">
-        <div className="icon">
-          <img src={item.img} alt={`Icon ${item.title}`} />
-        </div>
-
-<h6
-  className="title"
-  dangerouslySetInnerHTML={{ __html: item.title }}
-></h6>
-
-        <div className="text-content">
-          <p>{item.desc}</p>
-        </div>
-      </div>
-    </div>
-  ))}
+            <div className="content-row" style={{ display: 'flex', alignItems: 'center' }}>
+              {/* Title in place of icon */}
+              <div className="title" style={{ minWidth: '650px',marginLeft:'300px' }}>
+  <h6
+    dangerouslySetInnerHTML={{ __html: item.title }}
+    style={{ margin: 0 }}
+  ></h6>
 </div>
 
 
+              {/* Description as is */}
+              <div className="text-content" style={{ marginLeft: '20px' }}>
+                <p>{item.desc}</p>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
     </section>
   );
 }

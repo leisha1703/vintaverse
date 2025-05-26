@@ -1,32 +1,62 @@
 [
   {
-    "img": "/assets/imgs/team/v1.jpg",
+    "img": "/assets/imgs/team/vvv.jpg",
     "name": "Vinta Khaneja",
-    "subName": "Founder & CEO"
+    "subName": "Founder & CEO",
+    "social": {
+      "github": "https://github.com/Vintaverse-k",
+      "linkedin": "https://www.linkedin.com/in/vinta-kumari-888015165?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+      "instagram": "https://www.instagram.com/vidhikhaneja?igsh=MW1hdzByazNwYWF5aw=="
+    }
   },
   {
-    "img": "/assets/imgs/team/d1.jpg",
+    "img": "/assets/imgs/team/ddd.jpg",
     "name": "Diwakar Kalia",
-    "subName": "Senior Project Manager"
+    "subName": "Senior Project Manager",
+    "social": {
+      "github": "https://github.com/Vintaverse-k",
+      "linkedin": "https://www.linkedin.com/in/diwakar-kalia-77b9a153",
+      "instagram": "https://www.instagram.com/thenameis_diwakar?igsh=eGI4MHB4enhid3Jl&utm_source=qr"
+    }
   },
   {
-    "img": "/assets/imgs/team/leisha1.jpg",
+    "img": "/assets/imgs/team/leisha1 (2).jpg",
     "name": "Leisha",
-    "subName": "WordPress Developer"
+    "subName": "WordPress Developer",
+    "social": {
+      "github": "https://github.com/leisha1703",
+      "linkedin": "https://www.linkedin.com/in/leisha-590320229/",
+      "instagram": "https://www.instagram.com/leisha.1703?igsh=M2s5bDUzd3VtamMx"
+    }
   },
   {
-    "img": "/assets/imgs/team/r1.jpg",
+    "img": "/assets/imgs/team/rrr.jpg",
     "name": "Reza Hashmi",
-    "subName": "UI/UX Designer"
+    "subName": "UI/UX Designer",
+    "social": {
+      "github": "https://www.behance.net/rezahashmi",
+      "linkedin": "https://www.linkedin.com/in/rezahashmi?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "instagram": "https://www.instagram.com/rrezza.hashmi/"
+    }
   },
   {
-    "img": "/assets/imgs/team/m1.jpg",
+    "img": "/assets/imgs/team/manoj1.jpg",
     "name": "Manoj Kumar",
-    "subName": "WordPress Developer"
+    "subName": "WordPress Developer",
+    "social": {
+      "github": "https://github.com/Kumarmanoj123",
+      "linkedin": "https://www.linkedin.com/in/manojkumar2218167",
+      "instagram": "https://www.instagram.com/m4noj_official?igsh=NDE2ZXI3bHg5cDJj"
+    }
   },
   {
-    "img": "/assets/imgs/team/v22.png",
+    "img": "/assets/imgs/team/varun.jpg",
     "name": "Varun Walia",
-    "subName": "Web Designer"
+    "subName": "Web Designer",
+    "social": {
+      "github": "https://github.com/varunwalia09",
+      "linkedin": "https://www.linkedin.com/in/varun-walia-8444a6165/",
+      "instagram": "https://www.instagram.com/codervarun/?igsh=MXNtMHRqaXc1eGVqeA%3D%3D#"
+    }
   }
 ]

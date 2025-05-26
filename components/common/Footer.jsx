@@ -16,7 +16,7 @@ function Footer() {
       <div className="container pb-40 pt-40 ontop">
         <div className="row justify-content-between">
           <div className="col-lg-2">
-            <a href='/' className="logo icon-img-150 md-mb80">
+            <a href='/page-contact' className="logo icon-img-150 md-mb80">
               <img src="/assets/imgs/logo-light.svg" alt="website-logo" />
               <span className='chat-icon'>
 

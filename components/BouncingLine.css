@@ -14,7 +14,7 @@
 
 .bouncing-line path {
   transition: stroke 0.3s ease;
-stroke-width: 0.1;
+stroke-width: 1.5;
 color: white;
 }
 

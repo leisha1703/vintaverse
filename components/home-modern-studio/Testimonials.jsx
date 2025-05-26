@@ -47,14 +47,14 @@ function Testimonials() {
               </h3>
             </div>
             <div className="ml-auto">
-              <div className="swiper-arrow-control">
+              {/* <div className="swiper-arrow-control">
                 <div className="swiper-button-prev">
                   <span className="ti-arrow-left"></span>
                 </div>
                 <div className="swiper-button-next">
                   <span className="ti-arrow-right"></span>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -88,7 +88,7 @@ function Testimonials() {
                       </div>
                     </div>
                     <div className="ml-20">
-                      <h6 className="fz-18">Emily Chen</h6>
+                      <h6 className="fz-18">Daniel</h6>
                       <span className="p-color opacity-8 fz-15 mt-5">
                         Design Director
                       </span>

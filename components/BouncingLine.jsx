@@ -12,8 +12,6 @@ const BouncingLine = ({ color = 'white', width = 1000, height = 100 }) => {
   const mouseY = useRef(height);
   const [isHovering, setIsHovering] = useState(false);
   const mouseMoveTween = useRef(null);
-
-  // Simple object (not a ref) for GSAP animation
   const mouseYAnim = { value: height };
 
   useEffect(() => {
@@ -44,7 +42,10 @@ const BouncingLine = ({ color = 'white', width = 1000, height = 100 }) => {
     const centerY = e.clientY - rect.top;
     const deltaY = centerY - height;
 
-    const targetY = clamp(height + deltaY * 1.5, height - 150, height + 150);
+    const sensitivity = 3.0;
+    const maxOffset = 200;
+
+    const targetY = clamp(height + deltaY * sensitivity, height - maxOffset, height + maxOffset);
 
     if (mouseMoveTween.current) {
       mouseMoveTween.current.kill();
@@ -52,7 +53,7 @@ const BouncingLine = ({ color = 'white', width = 1000, height = 100 }) => {
 
     mouseMoveTween.current = gsap.to(mouseY, {
       current: targetY,
-      duration: 0.05,
+      duration: 0.03,
       ease: 'linear',
     });
   };
@@ -140,7 +141,7 @@ const BouncingLine = ({ color = 'white', width = 1000, height = 100 }) => {
           ref={pathRef}
           d={`M 0 ${height} Q ${width / 2} ${height} ${width} ${height}`}
           stroke={color}
-          
+          strokeWidth="1.5"
           fill="transparent"
         />
       </svg>
