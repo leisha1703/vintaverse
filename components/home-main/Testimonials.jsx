@@ -3,6 +3,8 @@ import React from 'react';
 import data from '@/data/testimonials';
 import { Navigation, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import BouncingLine from '@/components/BouncingLine'; // Adjust if needed
+
 function Testimonials() {
   const swiperOptions = {
     modules: [Pagination, Navigation],
@@ -12,12 +14,12 @@ function Testimonials() {
       el: '.testimonials-minim .swiper-pagination',
       clickable: true,
     },
-
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
   };
+
   return (
     <section className="testimonials">
       <div className="container section-padding bord-top-grd">
@@ -32,14 +34,10 @@ function Testimonials() {
               </div>
             </div>
           </div>
+
           <div className="col-lg-8">
             <div className="cont-full">
-              <div
-                className="testim-swiper"
-                data-carousel="swiper"
-                data-loop="true"
-                data-space="30"
-              >
+              <div className="testim-swiper" data-carousel="swiper" data-loop="true" data-space="30">
                 <Swiper
                   {...swiperOptions}
                   id="content-carousel-container-unq-testim"
@@ -51,10 +49,15 @@ function Testimonials() {
                       <div className="item">
                         <div className="content">
                           <div className="text">
-<p className="text-lg">{item.desc}</p>
-
+                            <p className="text-lg">{item.desc}</p>
                           </div>
-                          <div className="info d-flex align-items-center pt-40 mt-40 bord-thin-top">
+
+                          {/* Replacing line here */}
+                          <div className="mt-40">
+                            <BouncingLine color="#fff" height={40} width={160} />
+                          </div>
+
+                          <div className="info d-flex align-items-center pt-40">
                             <div>
                               <div className="fit-img circle">
                                 <img src={item.img} alt="" />
@@ -62,9 +65,7 @@ function Testimonials() {
                             </div>
                             <div className="ml-20">
                               <h5>{item.name}</h5>
-                              <span className="sub-title main-color">
-                                {item.subName}
-                              </span>
+                              <span className="sub-title main-color">{item.subName}</span>
                             </div>
                           </div>
                         </div>
@@ -72,6 +73,7 @@ function Testimonials() {
                     </SwiperSlide>
                   ))}
                 </Swiper>
+
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="256.721"
@@ -90,6 +92,7 @@ function Testimonials() {
                   ></path>
                 </svg>
               </div>
+
               <div className="swiper-arrow-control control-abslout">
                 <div className="swiper-button-prev">
                   <span className="ti-arrow-left"></span>
@@ -98,6 +101,7 @@ function Testimonials() {
                   <span className="ti-arrow-right"></span>
                 </div>
               </div>
+
               <div className="circle-blur">
                 <img src="/assets/imgs/patterns/blur1.png" alt="" />
               </div>
