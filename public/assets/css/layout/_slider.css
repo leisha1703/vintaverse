@@ -669,3 +669,8 @@
 .swiper-arrow-control .swiper-button-next {
   margin-left: 15px;
 }
+.swiper-arrow-control .swiper-button-next:hover,
+.swiper-arrow-control .swiper-button-prev:hover {
+  background: #fff !;
+  color: #000;
+}
