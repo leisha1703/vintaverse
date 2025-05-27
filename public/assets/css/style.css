@@ -6546,9 +6546,8 @@ footer.clean-footer.crev .circle-blur {
 .title {
   font-size: 18px;
   font-weight: 600;
-  margin: 0;
   white-space: nowrap;
- 
+ margin-left: 20%;
 }
 
 .text-content {

@@ -28,19 +28,19 @@ function Services() {
         {data.map((item, i) => (
           <div key={i} className="service-item">
             <BouncingLine />
-
-            <div className="content-row" style={{ display: 'flex', alignItems: 'center' }}>
+{/* style={{ display: 'flex', alignItems: 'center' }} */}
+            <div className="content-row" >
               {/* Title in place of icon */}
-              <div className="title" style={{ minWidth: '650px',marginLeft:'300px' }}>
+              <div className="title" >
   <h6
     dangerouslySetInnerHTML={{ __html: item.title }}
     style={{ margin: 0 }}
   ></h6>
 </div>
-
+{/* style={{ marginLeft: '20px' }} */}
 
               {/* Description as is */}
-              <div className="text-content" style={{ marginLeft: '20px' }}>
+              <div className="text-content" >
                 <p>{item.desc}</p>
               </div>
             </div>
