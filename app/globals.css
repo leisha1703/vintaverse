@@ -2,6 +2,7 @@
     width: 25px;
     height: 25px;
 }
+
 .chat-icon {
     background-color: #fd5b38;
     border-radius: 100px;
@@ -13,8 +14,8 @@
     position: fixed;
     bottom: 27px;
     right: 80px;
-
 }
+
 .chat-icon img {
     max-width: 30px;
 }

@@ -88,7 +88,7 @@ backgroundImage: 'none',
           <div key={i} className="service-item" style={{ color: 'black' }}>
             {/* Pass color prop to BouncingLine to make it black */}
             <BouncingLine color="black" />
-            <div className="content-row">
+            <div className="content-row width-72">
               <div className="icon">
                 <img
                   src={item.icon || item.img}
@@ -101,8 +101,6 @@ backgroundImage: 'none',
                 className="title"
                 dangerouslySetInnerHTML={{ __html: item.title }}
                 style={{
-                  maxWidth: '150px',
-                  wordBreak: 'break-word',
                   whiteSpace: 'normal',
                   color: 'black',
                 }}

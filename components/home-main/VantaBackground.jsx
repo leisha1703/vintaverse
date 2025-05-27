@@ -6,6 +6,7 @@ const VantaBackground = () => {
   const particles = useRef([]);
   const mouse = useRef({ x: null, y: null });
   useEffect(() => {
+    const screenWidth = window.innerWidth;
     const canvas = canvasRef.current;
     const ctx = canvas.getContext('2d');
     let width = canvas.width = window.innerWidth;
@@ -54,7 +55,15 @@ const VantaBackground = () => {
         ctx.fill();
       }
     }
-    const numParticles = 80;
+    let numParticles = 20; // Conditionally assign based on screen size. // Get screen dimensions and then assign.
+    console.log(screenWidth);
+    if(screenWidth > 768){
+      numParticles = 40;
+    }
+    if(screenWidth > 1278){
+      numParticles = 80
+    }
+    console.log("Particles count : " ,numParticles)
     particles.current = [];
     for (let i = 0; i < numParticles; i++) {
       particles.current.push(new Particle());

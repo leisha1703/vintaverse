@@ -58,48 +58,63 @@ function Header() {
             <div className="col-lg-11">
               <div className="caption">
                 <h1>Your creative partner in the</h1>
-                <div className="d-flex align-items-end">
+                {/* <div className="d-flex align-items-end sub-heading-container">
                   <div>
                     <h1 className="nowrap">
                       <span className="main-color">digital</span> world.
                     </h1>
                   </div>
                   <div>
-                    <div className="text ml-30">
+                    <div className="text ml-30 sub-header">
                       <p>
                         Vintaverse is a creative digital agency specializing in branding, UI/UX design,  mobile and web development.{' '}
                       </p>
                     </div>
                   </div>
+                </div> */}
+                <div className="d-flex align-items-lg-end align-items-start flex-column flex-lg-row sub-heading-container">
+                  <div>
+                    <h1 className="nowrap">
+                      <span className="main-color">digital</span> world.
+                    </h1>
+                  </div>
+                  <div>
+                    <div className="text ms-md-3 sub-header">
+                      <p>
+                        Vintaverse is a creative digital agency specializing in branding, UI/UX design, mobile and web development.
+                      </p>
+                    </div>
+                  </div>
                 </div>
+
               </div>
             </div>
           </div>
-     <div className="row mt-80">
-  <div className="col-lg-6 order-md-2">
-    <div
-      className="icon-img bounce-arrow"
-      style={{ cursor: 'pointer' }}
-      onClick={() => {
-        const nextSection = document.getElementById('mainHomeAboutUs');
-        if (nextSection) {
-          nextSection.scrollIntoView({ behavior: 'smooth' });
-        }
-      }}
-    >
-      <img src="/assets/imgs/icon-img/Union.png" alt="" />
-    </div>
-  </div>
-  <div className="col-lg-6 d-flex justify-content-end order-md-1">
-    <div className="info">
-      <h2 className="mb-10">7k <span style={{color:'#fd5b38'}}>+</span></h2>
-      <h6>
-        Projects completed <br />
-        <span className="main-color">successfully</span>
-      </h6>
-    </div>
-  </div>
-</div>
+          <div className="row mt-40 mt-lg-80">
+            <div className="col-lg-6 order-md-2">
+              <div
+                className="icon-img bounce-arrow"
+                style={{ cursor: 'pointer' }}
+                onClick={() => {
+                  const nextSection = document.getElementById('mainHomeAboutUs');
+                  if (nextSection) {
+                    nextSection.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
+              >
+                <img src="/assets/imgs/icon-img/Union.png" alt="" />
+              </div>
+            </div>
+            <div className="col-lg-6 d-flex justify-content-end order-md-1">
+              <div className="info">
+                <h2 className="mb-10">7k <span style={{ color: '#fd5b38' }}>+</span></h2>
+                <h6>
+                  Projects completed <br />
+                  <span className="main-color">successfully</span>
+                </h6>
+              </div>
+            </div>
+          </div>
 
         </div>
       </div>

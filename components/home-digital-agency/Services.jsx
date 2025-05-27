@@ -30,6 +30,7 @@ function Services() {
             <BouncingLine />
 {/* style={{ display: 'flex', alignItems: 'center' }} */}
             <div className="content-row" >
+              {/* Need to make it flex */}
               {/* Title in place of icon */}
               <div className="title" >
   <h6
