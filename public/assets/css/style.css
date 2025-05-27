@@ -390,7 +390,14 @@ figure {
   text-align: center;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+  transition: background-color 0.3s ease;
 }
+
+
+.social-icon a:hover {
+  background-color: #fd5b38;
+}
+
 
 .bord-top-grd {
   position: relative;

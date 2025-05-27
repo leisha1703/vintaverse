@@ -108,7 +108,7 @@ const VantaBackground = () => {
         width: '100%',
         height: '100%',
         zIndex: -1,
-        backgroundColor: '#000000',
+        backgroundColor: '#0F0F0F',
         display: 'block',
       }}
     />

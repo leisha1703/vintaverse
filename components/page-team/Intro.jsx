@@ -23,10 +23,9 @@ function Intro() {
           <div className="col-lg-6">
             <div className="cont">
               <h6 className="sub-title main-color mb-15">About Us</h6>
-              <h2 className="mb-15">Best creative & modern digital agency.</h2>
+              <h2 className="mb-15">Best creative, modern digital & development agency.</h2>
               <p>
-                Driven professional dedicated to making a lasting impact through
-                innovative solutions and unwavering excellence.
+                In our team, developers work alongside designers. This is crucial in creating a fast and responsive website that would excite the audience.
               </p>
               <div className="skills-box row mt-80">
                 <div className="col-md-6">

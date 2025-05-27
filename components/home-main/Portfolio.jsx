@@ -57,25 +57,25 @@ function Portfolio() {
             <div className="text pb-100">
               <ul>
                 <li className='d-flex align-items-center gap-3'>
-                  <Image src={arrowIcon} alt='up-arrow' className='up-arrow cursor-pointer' />
+                  <Image href="/project-details" src={arrowIcon} alt='up-arrow' className='up-arrow cursor-pointer' style={{width:'40px',height:'40px'}}/>
                   <Link href="/project-details">
                     <p>Sizzle App</p>
                   </Link>
                 </li>
                 <li className='d-flex align-items-center gap-3'>
-                  <Image src={arrowIcon} alt='up-arrow' className='up-arrow cursor-pointer' />
+                  <Image href="/project-details" src={arrowIcon} alt='up-arrow' className='up-arrow cursor-pointer' style={{width:'40px',height:'40px'}}/>
                   <Link href="/project-details2">
                     <p>Fitness</p>
                   </Link>
                 </li>
                 <li className='d-flex align-items-center gap-3 text-nowrap'>
-                  <Image src={arrowIcon} alt='up-arrow' className='up-arrow cursor-pointer' />
+                  <Image href="/project-details" src={arrowIcon} alt='up-arrow' className='up-arrow cursor-pointer' style={{width:'40px',height:'40px'}}/>
                   <Link href="/project-details4">
                     <p>WPCenter</p>
                   </Link>
                 </li>
-                <li className='d-flex align-items-center gap-3'>
-                  <Image src={arrowIcon} alt='up-arrow' className='up-arrow cursor-pointer' />
+                <li className='d-flex align-items-center gap-3' style={{marginBottom:'100px'}}>
+                  <Image href="/project-details" src={arrowIcon} alt='up-arrow' className='up-arrow cursor-pointer' style={{width:'40px',height:'40px'}}/>
                   <Link href="/project-details3">
                     <p>Live Streaming App</p>
                   </Link>

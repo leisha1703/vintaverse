@@ -3,54 +3,24 @@
 import React, { useState } from 'react';
 
 function Contact() {
-  const [interests, setInterests] = useState([]);
-  const [budget, setBudget] = useState('');
-
-  const interestOptions = [
-    "Site from scratch",
-    "UX/UI design",
-    "Product design",
-    "Webflow site",
-    "Motion design",
-    "Branding",
-    "Mobile development"
-  ];
-
-  const budgetOptions = [
-    "10–20k",
-    "30–40k",
-    "40–50k",
-    "50–100k",
-    ">100k"
-  ];
-
-  const toggleInterest = (item) => {
-    setInterests((prev) =>
-      prev.includes(item) ? prev.filter((i) => i !== item) : [...prev, item]
-    );
-  };
-
-  const handleBudgetSelect = (item) => {
-    setBudget(item);
-  };
+  const [selectedFile, setSelectedFile] = useState(null);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const formData = {
-      name: e.target.name.value,
-      email: e.target.email.value,
-      subject: e.target.subject.value,
-      message: e.target.message.value,
-      interests,
-      budget
-    };
+    const formData = new FormData();
+    formData.append('name', e.target.name.value);
+    formData.append('email', e.target.email.value);
+    formData.append('subject', e.target.subject.value);
+    formData.append('message', e.target.message.value);
+    if (selectedFile) {
+      formData.append('file', selectedFile);
+    }
 
     try {
-      const response = await fetch('https://formspree.io/f/xrbqwwjz', {
+      const response = await fetch('https://formspree.io/f/myzwqqad', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData)
+        body: formData
       });
 
       if (response.ok) {
@@ -64,13 +34,11 @@ function Contact() {
     }
   };
 
-
   return (
     <section className="contact section-padding">
       <div className="container">
         <div className="row">
           <div className="col-lg-4 valign">
-            {/* LEFT CONTACT INFO BLOCK */}
             <div className="sec-head info-box full-width md-mb80">
               <div className="phone fz-30 fw-600 underline main-color">
                 <a href="tel:+919317867676">+91 9317867676</a>
@@ -84,7 +52,6 @@ function Contact() {
                 <p>Contact@vintaverse.com</p>
               </div>
               <div className="social-icon mt-50">
-                {/* Social Links */}
                 <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" className="hover-anim"><i className="fab fa-facebook-f"></i></a>
                 <a href="https://www.linkedin.com/company/vintaverse" target="_blank" rel="noopener noreferrer" className="hover-anim"><i className="fab fa-dribbble"></i></a>
                 <a href="https://www.behance.net/contactvintave" target="_blank" rel="noopener noreferrer" className="hover-anim"><i className="fab fa-behance"></i></a>
@@ -96,7 +63,7 @@ function Contact() {
           <div className="col-lg-7 offset-lg-1 valign">
             <div className="full-width">
               <div className="sec-head">
-                <h6 className="sub-title main-color mb-15">Let&lsquo;s Chat</h6>
+                <h6 className="sub-title main-color mb-15">Let&rsquo;s Chat</h6>
                 <h3 className="text-u ls1">Send a <span className="fw-200">message</span></h3>
               </div>
 
@@ -104,30 +71,6 @@ function Contact() {
                 <div className="messages"></div>
 
                 <div className="controls row">
-                  
-                  {/* Interests Section */}
-                  <div className="col-12">
-                    <label className="mb-10 fw-500 d-block">I'm interested in…</label>
-                    <div className="d-flex flex-wrap gap-2">
-                      {interestOptions.map((item) => (
-                        <button
-                          type="button"
-                          key={item}
-                          onClick={() => toggleInterest(item)}
-                          className={`btn rounded-pill px-4 py-2 ${interests.includes(item) ? 'text-white' : ''}`}
-                          style={{
-                            borderRadius: '30px',
-                            border: '1px solid #fff',
-                            backgroundColor: interests.includes(item) ? '#fd5b38' : 'transparent',
-                            color: interests.includes(item) ? '#fff' : '#fff',
-                          }}
-                        >
-                          {item}
-                        </button>
-                      ))}
-
-                    </div>
-                  </div>
                   <div className="col-lg-6">
                     <div className="form-group">
                       <input id="form_name" type="text" name="name" placeholder="Name" required />
@@ -146,36 +89,31 @@ function Contact() {
                     </div>
                   </div>
 
-
-                  {/* Budget Section */}
-                  <div className="col-12 ">
-                    <label className="mb-10 fw-500 d-block">Project budget (USD)</label>
-                    <div className="d-flex flex-wrap gap-2">
-                      {budgetOptions.map((item) => (
-                        <button
-                          type="button"
-                          key={item}
-                          onClick={() => handleBudgetSelect(item)}
-                          className={`btn rounded-pill px-4 py-2 ${budget === item ? 'text-white' : ''}`}
-                          style={{
-                            borderRadius: '30px',
-                            border: '1px solid #fff',
-                            backgroundColor: budget === item ? '#fd5b38' : 'transparent',
-                            color: budget === item ? '#fff' : '#fff',
-                          }}
-                        >
-                          {item}
-                        </button>
-                      ))}
-
-                    </div>
-                  </div>
-
-                  {/* Message Field */}
                   <div className="col-12">
                     <div className="form-group">
                       <textarea id="form_message" name="message" placeholder="Message" rows="4" required></textarea>
                     </div>
+                  </div>
+
+                  {/* File Upload Section */}
+                  <div className="col-12">
+                    <div className="form-group">
+                      <label htmlFor="resume-upload" className="btn d-inline-flex align-items-center gap-2 border px-4 py-2" style={{ color:'#fff',borderRadius: '30px', cursor: 'pointer' }}>
+                        <i className="fas fa-paperclip"></i> Send an attachment
+                      </label>
+                      <input
+                        id="resume-upload"
+                        name="file"
+                        type="file"
+                        accept=".pdf,.doc,.docx"
+                        style={{ display: 'none' }}
+                        onChange={(e) => setSelectedFile(e.target.files[0])}
+                      />
+                      {selectedFile && <p className="mt-2 small">{selectedFile.name}</p>}
+                    </div>
+                  </div>
+
+                  <div className="col-12">
                     <div className="mt-30">
                       <button type="submit" className="butn butn-full butn-bord radius-30">
                         <span className="text">Let's Talk</span>

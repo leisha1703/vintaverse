@@ -71,7 +71,7 @@ function Team() {
                 <h5>
                   Become <br /> Our Member
                 </h5>
-                <a href="/page-contact" className="mt-30">
+                <a href="/page-contact2" className="mt-30">
                   <span className="ti-arrow-top-right fz-30"></span>
                 </a>
               </div>
