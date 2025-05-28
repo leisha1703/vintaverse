@@ -22,7 +22,7 @@ const VantaBackground = () => {
         this.y = Math.random() * height;
         this.vx = (Math.random() - 0.5) * 1.8;
         this.vy = (Math.random() - 0.5) * 1.8;
-        this.size = Math.random() * 5 + 3;
+        this.size = Math.random() * 4 + 1;
       }
       update() {
         this.x += this.vx;

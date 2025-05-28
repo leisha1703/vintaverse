@@ -4932,7 +4932,7 @@ footer.clean-footer.crev .circle-blur {
 }
 
 .main-header .caption h1 {
-  font-size: 80px;
+  font-size: 92px;
 }
 
 .main-header .icon-img {
@@ -8917,6 +8917,10 @@ footer.clean-footer.crev .circle-blur {
   overflow: hidden;
 }
 
+.services-inline2 .bouncing-line-wrapper {
+  width: 100%;
+}
+
 /* Responsive Media Queries */
 @media (max-width: 1179px) {
 
@@ -8953,6 +8957,11 @@ footer.clean-footer.crev .circle-blur {
   .sub-header {
     margin-top: 2rem;
   }
+
+  .services-inline2 .ontop {
+  width: 100%;
+  text-align: center;
+}
 
 }
 

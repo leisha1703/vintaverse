@@ -266,7 +266,7 @@ export default function ParticleBackground() {
             "lines": {
               "enable": true,
               "frequency": 0.005,
-              "opacity": 1,
+              "opacity": 0.7,
               "color": {
                 "value": "#FF0000"
               }
