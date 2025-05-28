@@ -54,16 +54,16 @@ function Portfolio() {
                 <img src="/assets/imgs/works/1/1.jpg" alt="" />
               </div>
               <div id="tab-2" className="tab-img">
-                <img src="/assets/imgs/works/1/6.jpg" alt="" />
+                <img src="/assets/imgs/works/1/2.jpg" alt="" />
               </div>
               <div id="tab-3" className="tab-img">
-                <img src="/assets/imgs/works/1/3.jpg" alt="" />
+                <img src="/assets/imgs/works/1/3.png" alt="" />
               </div>
               <div id="tab-4" className="tab-img">
-                <img src="/assets/imgs/works/1/4.jpg" alt="" />
+                <img src="/assets/imgs/works/1/4.png" alt="" />
               </div>
               <div id="tab-5" className="tab-img">
-                <img src="/assets/imgs/works/1/5.jpg" alt="" />
+                <img src="/assets/imgs/works/1/5.png" alt="" />
               </div>
               <div className="circle-blur">
                 <img src="/assets/imgs/patterns/blur1.png" alt="" />

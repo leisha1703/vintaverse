@@ -80,7 +80,7 @@ function Header() {
                   </div>
                   <div>
                     <div className="text ms-md-3 sub-header">
-                      <p>
+                      <p >
                         Vintaverse is a creative digital agency specializing in branding, UI/UX design, mobile and web development.
                       </p>
                     </div>
@@ -107,7 +107,7 @@ function Header() {
             </div>
             <div className="col-lg-6 d-flex justify-content-end order-md-1">
               <div className="info">
-                <h2 className="mb-10">7k <span >+</span></h2>
+                <h2 className="mb-5">7ksss <span >+</span></h2>
                 <h6>
                   Projects completed <br />
                   <span className="main-color">successfully</span>

@@ -162,7 +162,7 @@ h6 {
 
 p {
   line-height: 1.8;
-  font-size: 16px;
+  font-size: 22px;
   font-weight: 400;
   color: #c6c8c9;
   margin: 0;
@@ -2579,7 +2579,7 @@ img.left {
 }
 
 .mt-40 {
-  margin-top: 40px !important;
+  /* margin-top: 40px !important; */
 }
 
 .mt-45 {
@@ -8851,36 +8851,6 @@ justify-content: flex-end;
   }
 }
 
-@media (max-width: 430px) {
-  .row {
-    width: 100% !important;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 15%;
-    /* margin: 0 !important; */
-  }
-
-  .row > .col-lg-3,
-  .row > .col-md-6 {
-    width: 100% !important;
-    max-width: 100% !important;
-    margin-bottom: 30px;
-  }
-
-  .item-box {
-    padding: 20px;
-  }
-
-  .icon-img-70 {
-    margin-bottom: 20px;
-  }
-
-  .mb-30,
-  .mb-20,
-  .mb-40 {
-    margin-bottom: 15px !important;
-  }
-}
 /* vintaverse logo section for mobile screen */
 @media (max-width: 430px) {
   .logo img {
