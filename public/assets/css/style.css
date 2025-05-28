@@ -8884,7 +8884,7 @@ justify-content: flex-end;
 /* vintaverse logo section for mobile screen */
 @media (max-width: 430px) {
   .logo img {
-    width: 250px;
+    width: 180px;
     height: auto;
   }
 }
