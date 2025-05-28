@@ -8898,6 +8898,13 @@ justify-content: flex-end;
 }
 
 
+.pointer-events-none {
+  pointer-events: none;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .content-row {
   text-align: center;
   width: 70%;

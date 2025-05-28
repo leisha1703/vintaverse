@@ -14,9 +14,7 @@ function Portfolio() {
 
     document.querySelector('#' + tab_id).classList.add('current');
     console.log(document.querySelector('#' + tab_id));
-    // document.querySelectorAll('.links-img .img').forEach((el) => {
-    //   el.classList.remove('current');
-    // });
+
 
     if (!event.currentTarget.classList.contains('current')) {
       event.currentTarget.classList.add('current');
@@ -39,11 +37,10 @@ function Portfolio() {
               <a
                 href="/portfolio-creative"
                 className="butn butn-sm butn-bord radius-30"
->
-                {/* <span>View All</span> */}
+              >
+
               </a>
-              {/* <span className="icon ti-arrow-top-right"></span> */}
-              
+
             </div>
           </div>
         </div>
