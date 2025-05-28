@@ -5094,7 +5094,6 @@ footer.clean-footer.crev .circle-blur {
 .modern-slider .swiper-controls .swiper-button-next:hover {
 
   color: #0f0f0f;
-
   background: #fff;
 
 }
@@ -6473,6 +6472,7 @@ footer.clean-footer.crev .circle-blur {
   display: flex;
   flex-direction: column;
   align-items: stretch;
+  margin-left: 20px;
 }
 
 .service-item .line {
@@ -6599,6 +6599,7 @@ footer.clean-footer.crev .circle-blur {
 }
 
 .text-content p {
+  
   font-size: 26px;
   color: #fff;
   line-height: 1.4;
@@ -6607,13 +6608,14 @@ footer.clean-footer.crev .circle-blur {
 }
 
 .text-content2 p {
+justify-content: flex-end;
   font-size: 26px;
   color: #000;
   line-height: 1.4;
   word-break: break-word;
   width: 450px;
 }
-
+/*  */
 .services-clas .item {
   padding: 40px 30px;
   border-radius: 15px;
@@ -7960,6 +7962,7 @@ footer.clean-footer.crev .circle-blur {
 
   .md-mb50 {
     margin-bottom: 50px !important;
+    
   }
 
   .md-mb80 {
@@ -8848,6 +8851,44 @@ footer.clean-footer.crev .circle-blur {
   }
 }
 
+@media (max-width: 430px) {
+  .row {
+    width: 100% !important;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 15%;
+    /* margin: 0 !important; */
+  }
+
+  .row > .col-lg-3,
+  .row > .col-md-6 {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-bottom: 30px;
+  }
+
+  .item-box {
+    padding: 20px;
+  }
+
+  .icon-img-70 {
+    margin-bottom: 20px;
+  }
+
+  .mb-30,
+  .mb-20,
+  .mb-40 {
+    margin-bottom: 15px !important;
+  }
+}
+/* vintaverse logo section for mobile screen */
+@media (max-width: 430px) {
+  .logo img {
+    width: 250px;
+    height: auto;
+  }
+}
+
 /* ====================== [ End Responsive ] ====================== */
 .carddx {
   break-inside: avoid;
@@ -8941,7 +8982,6 @@ footer.clean-footer.crev .circle-blur {
   }
 
   .text-content2 p {
-
     font-size: 20px;
     line-height: 1.4;
     word-break: break-word;

@@ -107,7 +107,7 @@ function Header() {
             </div>
             <div className="col-lg-6 d-flex justify-content-end order-md-1">
               <div className="info">
-                <h2 className="mb-10">7k <span style={{ color: '#fd5b38' }}>+</span></h2>
+                <h2 className="mb-10">7k <span >+</span></h2>
                 <h6>
                   Projects completed <br />
                   <span className="main-color">successfully</span>
@@ -122,7 +122,7 @@ function Header() {
   );
 }
 export default Header;
-
+// style={{ color: '#fd5b38' }}
 
 
 // 'use client';

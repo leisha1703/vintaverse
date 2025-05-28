@@ -31,7 +31,7 @@ function Feat() {
               </div>
               <span className="mb-30 p-color">01 .</span>
               <h6 className="mb-20">Research and Planning </h6>
-              <p>Project Planning</p>
+              <p >Project Planning</p>
               <p>Expectations Setting</p>
               <p>Competitor Analysis</p>
               <p>Digital Strategy</p>
