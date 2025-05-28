@@ -16,7 +16,7 @@ function Numbers() {
           <div className="col-lg-4 col-md-6">
             <div className="item text-center md-mb50">
               <div className="o-hidden">
-                <h3 className="stroke">7K+++s +</h3>
+                <h3 className="stroke">7K +</h3>
               </div>
               <h6 className="p-color sub-title">Projects Completed</h6>
             </div>

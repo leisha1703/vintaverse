@@ -57,7 +57,6 @@ function Navbar() {
         <a className="logo icon-img-150" href="/">
           <img src="/assets/imgs/logo-light.svg" alt="logo" />
         </a>
-
         <button
           className="navbar-toggler"
           type="button"

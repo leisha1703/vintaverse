@@ -54,7 +54,7 @@ function Portfolio() {
                 <img src="/assets/imgs/works/1/1.jpg" alt="" />
               </div>
               <div id="tab-2" className="tab-img">
-                <img src="/assets/imgs/works/1/2.jpg" alt="" />
+                <img src="/assets/imgs/works/1/2.png" alt="" />
               </div>
               <div id="tab-3" className="tab-img">
                 <img src="/assets/imgs/works/1/3.png" alt="" />
