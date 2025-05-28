@@ -55,7 +55,7 @@ function Header() {
         <div className="container ontop">
           {/* rest of your content unchanged */}
           <div className="row">
-            <div className="col-lg-11">
+            <div className="col-lg-11 mt-8">
               <div className="caption">
                 <h1>Your creative partner in the</h1>
                 {/* <div className="d-flex align-items-end sub-heading-container">
@@ -90,10 +90,10 @@ function Header() {
               </div>
             </div>
           </div>
-          <div className="row mt-40 mt-lg-80">
-            <div className="col-lg-6 order-md-2">
+          <div className="row mt-20 mt-lg-80">
+            <div className="col-6 order-1">
               <div
-                className="icon-img bounce-arrow"
+                className="icon-img bounce-arrow d-flex"
                 style={{ cursor: 'pointer' }}
                 onClick={() => {
                   const nextSection = document.getElementById('mainHomeAboutUs');
@@ -102,10 +102,10 @@ function Header() {
                   }
                 }}
               >
-                <img src="/assets/imgs/icon-img/Union.png" alt="" />
+                <img src="/assets/imgs/icon-img/Union.png" alt=""  />
               </div>
             </div>
-            <div className="col-lg-6 d-flex justify-content-end order-md-1">
+            <div className="col-6 d-flex justify-content-end order-2">
               <div className="info">
                 <h2 className="mb-10">7k <span >+</span></h2>
                 <h6>
