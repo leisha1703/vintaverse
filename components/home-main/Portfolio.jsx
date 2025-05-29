@@ -15,7 +15,7 @@ function Portfolio() {
     slidesPerView: 'auto',
     spaceBetween: 80,
     loop: true,
-    touchRatio: 0.2,
+    touchRatio: 2,
     speed: 1500,
     pagination: {
       el: '.work-crev .swiper-pagination',

@@ -23,7 +23,7 @@ function Feat() {
             <span className="thin"></span>
           </h6>
         </div>
-        <div className="row" style={{ width:' 115%' , }}>
+        <div className="row" >
           <div className="col-lg-3 col-md-6">
             <div className="item-box radius-15 md-mb50">
               <div className="icon-img-70 mb-40 opacity-3">

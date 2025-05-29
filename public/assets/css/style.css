@@ -56,6 +56,11 @@ main {
   margin-top: 58px;
   /* changes for my side */
 }
+@media (max-width: 768px) {
+  .row > * {
+    margin-top: 0px; /* reduced margin for mobile */
+  }
+}
 
 .row.sm-marg {
   margin-left: -5px;
@@ -954,6 +959,18 @@ figure {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
+@media (max-width: 768px) {
+  .vi-more .butn {
+    display: inline-block;   /* retain natural width */
+    margin: 0 auto;          /* center horizontally */
+    text-align: center;      /* center the text inside */
+  }
+
+  .vi-more {
+    text-align: center;      /* center the inline-block button */
+  }
+}
+
 
 .vi-more .icon {
   width: 35px;
@@ -1270,6 +1287,28 @@ figure {
   -webkit-transform: translate3d(0px, 0px, 0px) rotateX(0deg) scale(1);
   transform: translate3d(0px, 0px, 0px) rotateX(0deg) scale(1);
   opacity: 1;
+}
+@media (max-width: 768px) {
+  /* Reset perspective for mobile */
+  .d-rotate {
+    perspective: none !important;
+    -webkit-perspective: none !important;
+  }
+
+  /* Reset transforms on rotate-text for mobile */
+  .d-rotate .rotate-text {
+    -webkit-transform: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+    -webkit-transform-origin: center !important;
+    transform-origin: center !important;
+    transition-delay: 0s !important;
+  }
+
+  /* Optional: ensure container centers text */
+  .d-rotate {
+    text-align: center;
+  }
 }
 
 .d-slideup .sideup-text {
@@ -3795,6 +3834,14 @@ body.loaded {
   text-transform: uppercase;
   letter-spacing: 2px;
 }
+@media (max-width: 768px) {
+  .sec-head .sub-title {
+    text-align: center;
+    margin: 0 auto;         /* center horizontally */
+    display: block;         /* ensure it's treated as a block element */
+  }
+}
+
 
 .title-bord {
   font-size: 14px;
@@ -4598,6 +4645,20 @@ body.loaded {
   border: 1px solid rgba(225, 255, 255, 0.1);
   border-radius: 50%;
 }
+@media (max-width: 768px) {
+  .clients-carso.in-circle .item {
+    width: 110px;        /* smaller diameter on mobile */
+    height: 110px;
+    line-height: 110px;  /* vertically center text if any */
+    border-width: 1px;   /* keep border */
+  }
+
+  .clients-carso .img {
+    margin: 0 auto;      /* keep centered */
+    max-width: 80%;      /* limit max width on mobile */
+    height: auto;        /* maintain aspect ratio */
+  }
+}
 
 /* Contact
 -----------------------------------------------------------------*/
@@ -5313,6 +5374,12 @@ footer.clean-footer.crev .circle-blur {
 .header-project {
   min-height: 70vh;
   padding: 220px 0 120px;
+}
+@media (max-width: 768px) {
+  .header-project {
+    min-height: auto;       /* or a smaller fixed height like 50vh */
+    padding: 80px 20px 60px; /* less vertical padding and add some horizontal padding */
+  }
 }
 
 .header-project:before {
@@ -6568,6 +6635,7 @@ footer.clean-footer.crev .circle-blur {
   animation: spinIcon 4s linear infinite;
   margin-left: 15%;
   margin-right: 20%;
+ 
 }
 
 @keyframes spinIcon {
@@ -6584,6 +6652,24 @@ footer.clean-footer.crev .circle-blur {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .icon {
+    width: 40px;          /* smaller icon on mobile */
+    height: 40px;
+    margin-left: 0 !important; /* remove left margin */
+    margin-right: 0 !important; /* remove right margin */
+    margin: 0 auto !important;  /* center horizontally */
+    display: block;       /* make sure it's block for margin auto */
+  }
+
+  .icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    justify-content: center;
+  }
 }
 
 .title {
@@ -6745,6 +6831,41 @@ justify-content: flex-end;
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
   opacity: 0.15;
+}
+@media (max-width: 768px) {
+  .feat {
+    text-align: center;
+  }
+
+  .feat .item {
+    margin:  auto;          /* center item block */
+    display: block;
+  }
+
+  .feat .item .info {
+    padding: 0px;           /* optionally reduce padding */
+  }
+
+  .feat .circle-blur {
+    left: 50%;               /* center horizontally */
+    transform: translateX(-50%) rotate(180deg); /* center & rotate */
+    width: 80vw;             /* optionally adjust size */
+  }
+  
+}
+@media (max-width: 768px) {
+  .item-box {
+    text-align: center;
+  }
+
+  .icon-img-70 {
+    margin:  auto;
+    display: block;
+  }
+
+  .icon-img-70 img {
+    display: inline-block;
+  }
 }
 
 /* Sliders
@@ -7965,6 +8086,7 @@ justify-content: flex-end;
     
   }
 
+
   .md-mb80 {
     margin-bottom: 80px;
   }
@@ -8119,6 +8241,31 @@ justify-content: flex-end;
     margin-left: -15px;
     margin-right: -15px;
   }
+@media (max-width: 768px) {
+  .team-crev2 .item .img {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: block;
+    text-align: center;
+  }
+
+  .team-crev2 .item .img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+  }
+
+  .team-crev2 .item {
+    margin-bottom: 40px;
+  }
+
+  .team-crev2 .item-bord {
+    text-align: center;
+    margin: 0 auto;
+  }
+}
 
   .row.xxlg-marg>* {
     padding-left: 15px;
@@ -8985,5 +9132,7 @@ justify-content: flex-end;
 @media (min-width: 468px) and (max-width: 1179px) {
   .main-header .caption h1 {
     font-size: 60px;
+    
   }
+  
 }
