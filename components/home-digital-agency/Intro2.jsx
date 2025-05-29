@@ -30,7 +30,7 @@ function Intro2() {
       case 3:
         return {
           ...item,
-          title: 'Comprehensive services, all in one place',
+          title: 'Comprehensive services,<br> all in one place',
           desc: 'From UI/UX and logo design to mobile app development, frontend and backend engineering, and ongoing technical support—we’ve got every aspect of your project covered.',
           icon: '/assets/imgs/icon-img/40.png',
         };
@@ -46,9 +46,9 @@ function Intro2() {
           <div className="d-flex align-items-center mb-30">
             <h2 className="fw-600 fz-70 text-u d-rotate wow" style={{ color: 'black' }}>
               <span
-                className="rotate-text"
+                className="rotate-text pt-80"
                 style={{
-                  paddingTop: '80px',
+                  
 backgroundImage: 'none',
                     WebkitTextFillColor: 'black',
                     color: 'black',                }}

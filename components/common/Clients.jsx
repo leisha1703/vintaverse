@@ -93,8 +93,8 @@ function Clients() {
         <div className="sec-bottom mt-100">
           <div className="main-bg d-flex align-items-center">
             <h6 className="fz-14 fw-400">
-              More than <span className="fw-400"> 200+ companies</span>
-              trusted us worldwide
+              More than <span className="fw-400"> 200+ companies </span>
+               trusted us worldwide
             </h6>
           </div>
         </div>

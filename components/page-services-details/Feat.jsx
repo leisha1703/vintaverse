@@ -6,7 +6,7 @@ function Feat() {
       <div className="container">
         <div className="sec-head mb-80">
           <div className="d-flex align-items-center mb-30">
-            <h2 className="fw-600 fz-70 text-u d-rotate wow">
+            <h2 className="fw-600 fz-70 text-u d-rotate wow" >
               <span className="rotate-text">
                 Our <span className="fw-200">Process</span>
               </span>

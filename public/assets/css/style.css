@@ -6545,10 +6545,12 @@ footer.clean-footer.crev .circle-blur {
 .services-wire {
   display: flex;
   flex-direction: column;
-  gap: 60px;
+  gap: 0px;
   padding: 40px 20px;
 }
-
+.services-wire .text{
+  text-align: justify;
+}
 .service-item {
   display: flex;
   flex-direction: column;
@@ -6714,6 +6716,7 @@ justify-content: flex-end;
   line-height: 1.4;
   word-break: break-word;
   width: 450px;
+  text-align: justify;
 }
 /*  */
 .services-clas .item {
@@ -9079,7 +9082,7 @@ justify-content: flex-end;
   line-height: 1.4;
   word-break: break-word;
   width: 100%;
-  text-align: left;
+  text-align: justify;
 }
 
 .content-row .icon {
@@ -9126,6 +9129,7 @@ justify-content: flex-end;
     word-break: break-word;
     width: 90%;
     margin: 0 auto;
+    text-align: justify;
   }
 
   .sub-heading-container {

@@ -1,6 +1,6 @@
 .bouncing-line-wrapper {
   width: 70%;
-  margin: 20px auto;
+  margin: 20px ;
   position: relative;
   overflow: hidden;
 }
