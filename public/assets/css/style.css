@@ -4647,15 +4647,15 @@ body.loaded {
 }
 @media (max-width: 768px) {
   .clients-carso.in-circle .item {
-    width:50px;        /* smaller diameter on mobile */
-    height: 50px;
-    line-height: 50px;  /* vertically center text if any */
+    width:90px;        /* smaller diameter on mobile */
+    height: 90px;
+    line-height: 90px;  /* vertically center text if any */
     border-width: 1px;   /* keep border */
   }
 
   .clients-carso .img {
     margin: 0 auto;      /* keep centered */
-    max-width: 40%;      /* limit max width on mobile */
+    max-width: 70%;      /* limit max width on mobile */
     height: auto;        /* maintain aspect ratio */
   }
 }
