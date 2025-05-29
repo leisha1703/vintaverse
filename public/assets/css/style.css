@@ -4655,7 +4655,7 @@ body.loaded {
 
   .clients-carso .img {
     margin: 0 auto;      /* keep centered */
-    max-width: 70%;      /* limit max width on mobile */
+    max-width: 50%;      /* limit max width on mobile */
     height: auto;        /* maintain aspect ratio */
   }
 }
