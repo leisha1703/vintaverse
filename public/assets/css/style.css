@@ -4647,9 +4647,9 @@ body.loaded {
 }
 @media (max-width: 768px) {
   .clients-carso.in-circle .item {
-    width:90px;        /* smaller diameter on mobile */
-    height: 90px;
-    line-height: 90px;  /* vertically center text if any */
+    width:60px;        /* smaller diameter on mobile */
+    height: 60px;
+    line-height: 60px;  /* vertically center text if any */
     border-width: 1px;   /* keep border */
   }
 
