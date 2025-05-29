@@ -3894,6 +3894,20 @@ body.loaded {
   position: relative;
   z-index: 3;
 }
+@media (max-width: 768px) {
+  .sec-bottom:after {
+    top: 40%; /* Slightly adjusted for smaller screens */
+  }
+
+  .sec-bottom .d-flex {
+    width: 100%;                /* Full width on mobile */
+    max-width: 90%;             /* Prevents touching edges */
+    padding: 10px 20px;         /* Reduced horizontal padding */
+    border-radius: 20px;        /* Slightly smaller radius for smaller layout */
+    flex-direction: column;     /* Stack elements if using flex children */
+    text-align: center;         /* Center content */
+  }
+}
 
 /* About Intro
 -----------------------------------------------------------------*/
