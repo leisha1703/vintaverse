@@ -114,7 +114,7 @@ function Portfolio() {
                   <h6 className="sub-title p-color ml-20">/ Branding</h6>
                 </div>
                 <div className="img">
-                  <img src="/assets/imgs/works/1/3.jpg" alt="" />
+                  <img src="/assets/imgs/works/1/333.jpg" alt="" />
                 </div>
               </div>
               <div

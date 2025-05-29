@@ -51,10 +51,15 @@ function Contact() {
                 <h6 className="mb-15">Email</h6>
                 <p>Contact@vintaverse.com</p>
               </div>
-              <div className="social-icon mt-50">
-                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" className="hover-anim"><i className="fab fa-facebook-f"></i></a>
-                <a href="https://www.linkedin.com/company/vintaverse" target="_blank" rel="noopener noreferrer" className="hover-anim"><i className="fab fa-dribbble"></i></a>
-                <a href="https://www.behance.net/contactvintave" target="_blank" rel="noopener noreferrer" className="hover-anim"><i className="fab fa-behance"></i></a>
+               <div className="morinfo mt-30  ">
+                
+                <h6>Find Us on:</h6>
+              </div>
+              <div className="social-icon mt-30 ">
+                {/* Social Links */}
+                <a href="https://github.com/Vintaverse-k" target="_blank" rel="noopener noreferrer" className="hover-anim"><i className="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/company/vintaverse" target="_blank" rel="noopener noreferrer" className="hover-anim"><i className="fab fa-linkedin"></i></a>
+                {/* <a href="https://www.behance.net/contactvintave" target="_blank" rel="noopener noreferrer" className="hover-anim"><i className="fab fa-behance"></i></a> */}
                 <a href="https://www.instagram.com/vintaverse.ai/" target="_blank" rel="noopener noreferrer" className="hover-anim"><i className="fab fa-instagram"></i></a>
               </div>
             </div>
@@ -64,7 +69,7 @@ function Contact() {
             <div className="full-width">
               <div className="sec-head">
                 <h6 className="sub-title main-color mb-15">Let&rsquo;s Chat</h6>
-                <h3 className="text-u ls1">Send a <span className="fw-200">message</span></h3>
+                <h3 className="text-u ls1 text-center mb-20">Send a <span className="fw-200">message</span></h3>
               </div>
 
               <form id="contact-form" className="form2" onSubmit={handleSubmit}>
@@ -72,25 +77,25 @@ function Contact() {
 
                 <div className="controls row">
                   <div className="col-lg-6">
-                    <div className="form-group">
+                    <div className="form-group mb-15">
                       <input id="form_name" type="text" name="name" placeholder="Name" required />
                     </div>
                   </div>
 
                   <div className="col-lg-6">
-                    <div className="form-group">
+                    <div className="form-group mb-15">
                       <input id="form_email" type="email" name="email" placeholder="Email" required />
                     </div>
                   </div>
 
                   <div className="col-12">
-                    <div className="form-group">
+                    <div className="form-group mb-15">
                       <input id="form_subject" type="text" name="subject" placeholder="Subject" />
                     </div>
                   </div>
 
                   <div className="col-12">
-                    <div className="form-group">
+                    <div className="form-group mb-15">
                       <textarea id="form_message" name="message" placeholder="Message" rows="4" required></textarea>
                     </div>
                   </div>

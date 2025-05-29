@@ -13,7 +13,8 @@ function Contact() {
     "Webflow site",
     "Motion design",
     "Branding",
-    "Mobile development"
+    "Mobile development",
+    "Web development"
   ];
 
   const budgetOptions = [
@@ -83,11 +84,15 @@ function Contact() {
                 <h6 className="mb-15">Email</h6>
                 <p>Contact@vintaverse.com</p>
               </div>
-              <div className="social-icon mt-50">
+              <div className="morinfo mt-30  ">
+                
+                <h6>Find Us on:</h6>
+              </div>
+              <div className="social-icon mt-30 ">
                 {/* Social Links */}
-                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" className="hover-anim"><i className="fab fa-facebook-f"></i></a>
-                <a href="https://www.linkedin.com/company/vintaverse" target="_blank" rel="noopener noreferrer" className="hover-anim"><i className="fab fa-dribbble"></i></a>
-                <a href="https://www.behance.net/contactvintave" target="_blank" rel="noopener noreferrer" className="hover-anim"><i className="fab fa-behance"></i></a>
+                <a href="https://github.com/Vintaverse-k" target="_blank" rel="noopener noreferrer" className="hover-anim"><i className="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/company/vintaverse" target="_blank" rel="noopener noreferrer" className="hover-anim"><i className="fab fa-linkedin"></i></a>
+                {/* <a href="https://www.behance.net/contactvintave" target="_blank" rel="noopener noreferrer" className="hover-anim"><i className="fab fa-behance"></i></a> */}
                 <a href="https://www.instagram.com/vintaverse.ai/" target="_blank" rel="noopener noreferrer" className="hover-anim"><i className="fab fa-instagram"></i></a>
               </div>
             </div>
@@ -95,9 +100,9 @@ function Contact() {
 
           <div className="col-lg-7 offset-lg-1 valign">
             <div className="full-width">
-              <div className="sec-head">
-                <h6 className="sub-title main-color mb-15">Let&lsquo;s Chat</h6>
-                <h3 className="text-u ls1">Send a <span className="fw-200">message</span></h3>
+              <div className="sec-head mb-20">
+                <h6 className="sub-title main-color mb-15 text-center">Let&lsquo;s Chat</h6>
+                <h3 className="text-u ls1 text-center">Send a <span className="fw-200">message</span></h3>
               </div>
 
               <form id="contact-form" className="form2" onSubmit={handleSubmit}>
@@ -108,13 +113,13 @@ function Contact() {
                   {/* Interests Section */}
                   <div className="col-12">
                     <label className="mb-10 fw-500 d-block">I'm interested in…</label>
-                    <div className="d-flex flex-wrap gap-2">
+                    <div className="d-flex flex-wrap gap-2 mb-15">
                       {interestOptions.map((item) => (
                         <button
                           type="button"
                           key={item}
                           onClick={() => toggleInterest(item)}
-                          className={`btn rounded-pill px-4 py-2 ${interests.includes(item) ? 'text-white' : ''}`}
+                          className={`btn rounded-pill px-4 py-2 mt-10 ${interests.includes(item) ? 'text-white' : ''}`}
                           style={{
                             borderRadius: '30px',
                             border: '1px solid #fff',
@@ -129,19 +134,19 @@ function Contact() {
                     </div>
                   </div>
                   <div className="col-lg-6">
-                    <div className="form-group">
+                    <div className="form-group mb-15">
                       <input id="form_name" type="text" name="name" placeholder="Name" required />
                     </div>
                   </div>
 
                   <div className="col-lg-6">
-                    <div className="form-group">
+                    <div className="form-group mb-15">
                       <input id="form_email" type="email" name="email" placeholder="Email" required />
                     </div>
                   </div>
 
                   <div className="col-12">
-                    <div className="form-group">
+                    <div className="form-group mb-15">
                       <input id="form_subject" type="text" name="subject" placeholder="Subject" />
                     </div>
                   </div>
@@ -149,8 +154,8 @@ function Contact() {
 
                   {/* Budget Section */}
                   <div className="col-12 ">
-                    <label className="mb-10 fw-500 d-block">Project budget (USD)</label>
-                    <div className="d-flex flex-wrap gap-2">
+                    <label className="mb-10 fw-500 d-block mb-15">Project budget (USD)</label>
+                    <div className="d-flex flex-wrap gap-2 mb-15">
                       {budgetOptions.map((item) => (
                         <button
                           type="button"

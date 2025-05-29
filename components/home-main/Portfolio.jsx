@@ -2,7 +2,7 @@
 import React from 'react';
 import Image from 'next/image';
 import data from '@/data/portfolios/works1';
-import { Navigation, Pagination } from 'swiper';
+import { Navigation, Pagination, Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import arrowIcon from '@/public/assets/imgs/upArrow.svg';
 import Link from 'next/link';
@@ -11,22 +11,26 @@ function Portfolio() {
   const marquess = ['Our Portfolio']; // Replace with your actual array
   const AllMarquess = Array(10).fill(marquess).flat();
   const swiperOptions = {
-    modules: [Pagination, Navigation],
+    modules: [Pagination, Navigation, Autoplay],
     slidesPerView: 'auto',
     spaceBetween: 80,
     loop: true,
     touchRatio: 2,
     speed: 1500,
+    autoplay: {
+      delay: 3000, // 3 seconds
+      disableOnInteraction: false,
+    },
     pagination: {
       el: '.work-crev .swiper-pagination',
       type: 'progressbar',
     },
-
     navigation: {
       nextEl: '.work-crev .swiper-button-next',
       prevEl: '.work-crev .swiper-button-prev',
     },
   };
+
   return (
     <section className="work-fade section-padding sub-bg bord-top-grd bord-bottom-grd" id='mainHomePortfolio'>
       <div className="container position-re">
@@ -49,33 +53,33 @@ function Portfolio() {
               </a>
               {/* <span className="icon ti-arrow-top-right"></span> */}
             </div>
-              {/* <span className="up-arrow cursor-pointer"></span> */}
+            {/* <span className="up-arrow cursor-pointer"></span> */}
           </div>
         </div>
         <div className="row">
           <div className="col-lg-3 d-flex align-items-end">
-            <div className="text pb-100">
+            <div className="text">
               <ul>
                 <li className='d-flex align-items-center gap-3'>
-                  <Image href="/project-details" src={arrowIcon} alt='up-arrow' className='up-arrow cursor-pointer' style={{width:'40px',height:'40px'}}/>
+                  <Image href="/project-details" src={arrowIcon} alt='up-arrow' className='up-arrow cursor-pointer' style={{ width: '40px', height: '40px' }} />
                   <Link href="/project-details">
                     <p>Sizzle App</p>
                   </Link>
                 </li>
                 <li className='d-flex align-items-center gap-3'>
-                  <Image href="/project-details" src={arrowIcon} alt='up-arrow' className='up-arrow cursor-pointer' style={{width:'40px',height:'40px'}}/>
+                  <Image href="/project-details" src={arrowIcon} alt='up-arrow' className='up-arrow cursor-pointer' style={{ width: '40px', height: '40px' }} />
                   <Link href="/project-details2">
                     <p>Fitness</p>
                   </Link>
                 </li>
                 <li className='d-flex align-items-center gap-3 text-nowrap'>
-                  <Image href="/project-details" src={arrowIcon} alt='up-arrow' className='up-arrow cursor-pointer' style={{width:'40px',height:'40px'}}/>
+                  <Image href="/project-details" src={arrowIcon} alt='up-arrow' className='up-arrow cursor-pointer' style={{ width: '40px', height: '40px' }} />
                   <Link href="/project-details4">
                     <p>WPCenter</p>
                   </Link>
                 </li>
-                <li className='d-flex align-items-center gap-3' style={{marginBottom:'200px'}}>
-                  <Image href="/project-details" src={arrowIcon} alt='up-arrow' className='up-arrow cursor-pointer' style={{width:'40px',height:'40px'}}/>
+                <li className='d-flex align-items-center gap-3' style={{ marginBottom: '300px' }}>
+                  <Image href="/project-details" src={arrowIcon} alt='up-arrow' className='up-arrow cursor-pointer' style={{ width: '40px', height: '40px' }} />
                   <Link href="/project-details3">
                     <p>Live Streaming App</p>
                   </Link>
@@ -85,6 +89,9 @@ function Portfolio() {
           </div>
           <div className="col-lg-8">
             <div className="work-swiper">
+              {/* <div className="arrow-wrapper swiper-left-arrow">
+                <i className="arrow left ">‹</i>
+              </div> */}
               <Swiper {...swiperOptions} className="swiper-container">
                 {data.map((item, i) => (
                   <SwiperSlide key={i}>
@@ -143,8 +150,12 @@ function Portfolio() {
                       </div>
                     </div>
                   </SwiperSlide>
+
                 ))}
               </Swiper>
+              {/* <div className="arrow-wrapper ">
+                <i className="arrow right ">›</i> 
+              </div> */}
             </div>
           </div>
         </div>
@@ -175,3 +186,6 @@ function Portfolio() {
 }
 
 export default Portfolio;
+
+
+

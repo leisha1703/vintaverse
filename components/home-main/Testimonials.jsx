@@ -48,7 +48,7 @@ function Testimonials() {
                     <SwiperSlide key={i}>
                       <div className="item">
                         <div className="content">
-                          <div className="text">
+                          <div className="text slider-wrapper">
                             <p className="text-lg">{item.desc}</p>
                           </div>
 

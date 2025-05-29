@@ -43,7 +43,7 @@ function Services() {
               </div>
             </div>
             <div className="col-lg-4">
-              <div className="text md-mb80">
+              <div className="text md-mb80 slider-wrapper">
                 <p>
                 We design clean, intuitive interfaces that enhance user experience, 
                 improve engagement, and bring your digital vision to life effortlessly.
@@ -76,7 +76,7 @@ function Services() {
               </div>
             </div>
             <div className="col-lg-4">
-              <div className="text md-mb80">
+              <div className="text md-mb80 slider-wrapper">
                 <p>
                 We craft clear, compelling brand identities that build trust, spark emotion, 
                 and align every touchpoint with your business vision.
@@ -109,7 +109,7 @@ function Services() {
               </div>
             </div>
             <div className="col-lg-4">
-              <div className="text md-mb80">
+              <div className="text md-mb80 slider-wrapper">
                 <p>
                 We create smart, data-driven strategies that boost visibility, 
                 drive traffic, and turn curious clicks into loyal customers effortlessly.
@@ -141,7 +141,7 @@ function Services() {
               </div>
             </div>
             <div className="col-lg-4">
-              <div className="text md-mb80">
+              <div className="text md-mb80 slider-wrapper">
                 <p>
                Building powerful websites that attract visitors, deliver smooth experiences, and turn browsers into lifelong users through smart design and data insights.
                 </p>

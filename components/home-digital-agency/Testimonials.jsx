@@ -49,8 +49,8 @@ function Testimonials() {
                   <SwiperSlide>
                     <div className="item">
                       <div className="content">
-                        <div className="text">
-                          <p  style={{fontSize: '16px',}}>
+                        <div className="text-justify slider-wrapper">
+                          <p  style={{fontSize: '40px',}}>
                            With over 8+ years of experience in the IT sector, Vinta Kumari is a seasoned UI/UX designer known for crafting intuitive and visually compelling digital experiences. Her expertise spans across website design, mobile app UI (both iOS and Android), branding graphics, and professional presentations.
 Vinta has led the creative direction for over 1500+ projects, combining deep user research with elegant design systems to elevate brands and products. Proficient in tools like Figma, Sketch, Adobe Photoshop, and Illustrator, she brings a modern, user-centered approach to every interface.
 Whether designing complex applications or marketing visuals, Vinta is passionate about turning ideas into meaningful user journeys with high aesthetic and functional value.                          </p>

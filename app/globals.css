@@ -32,11 +32,16 @@
 }
 
 .bounce-arrow {
+
   animation: bounce 1.8s infinite ease-in-out;
   cursor: pointer;
   
 }
-
+@media (max-width: 767.98px) {
+  .bounce-arrow {
+    margin-top: 2rem; /* Adjust the value as needed */
+  }
+}
 .services-reimagined {
   padding: 60px 0;
 }

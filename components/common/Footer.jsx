@@ -72,10 +72,10 @@ function Footer() {
                     <i className="fab fa-facebook-f"></i>
                   </a> */}
                   <a
-                    href="https://www.facebook.com/"
+                    href="https://github.com/Vintaverse-k"
                     target="_blank"
                     rel="noopener noreferrer">
-                    <i className="fab fa-facebook-f"></i>
+                    <i className="fab fa-github"></i>
                   </a>
                 </li>
                 {/* <li className="hover-this cursor-pointer ml-10">
