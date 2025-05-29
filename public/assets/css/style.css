@@ -8333,7 +8333,7 @@ justify-content: flex-end;
   }
 
   .sec-head .sub-title span:first-of-type {
-    display: none;
+    /* display: none; */
   }
 
   .sec-head .sub-title span.thin {
