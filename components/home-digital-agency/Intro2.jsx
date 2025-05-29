@@ -53,7 +53,7 @@ backgroundImage: 'none',
                     WebkitTextFillColor: 'black',
                     color: 'black',                }}
               >
-                {/* Benefits of{' '} */}
+                Benefits of{' '}
                 <span
                   className="fw-200"
                   style={{
