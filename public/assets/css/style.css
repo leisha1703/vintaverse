@@ -4643,19 +4643,19 @@ body.loaded {
   height: 220px;
   line-height: 220px;
   border: 1px solid rgba(225, 255, 255, 0.1);
-  border-radius: 50%;
+  border-radius: 50%;margin: 10%;
 }
 @media (max-width: 768px) {
   .clients-carso.in-circle .item {
-    width: 110px;        /* smaller diameter on mobile */
-    height: 110px;
-    line-height: 110px;  /* vertically center text if any */
+    width:50px;        /* smaller diameter on mobile */
+    height: 50px;
+    line-height: 50px;  /* vertically center text if any */
     border-width: 1px;   /* keep border */
   }
 
   .clients-carso .img {
     margin: 0 auto;      /* keep centered */
-    max-width: 80%;      /* limit max width on mobile */
+    max-width: 40%;      /* limit max width on mobile */
     height: auto;        /* maintain aspect ratio */
   }
 }
