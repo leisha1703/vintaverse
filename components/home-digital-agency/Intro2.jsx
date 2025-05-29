@@ -69,7 +69,7 @@ backgroundImage: 'none',
 
             </h2>
           </div>
-          <h6 className="sub-title main-color d-flex align-items-center" style={{ color: 'black' }}>
+          <h6 className="sub-title main-color d-flex align-items-center" >
             <span>WE CREATE MEMORABLE WEBSITES</span>
             <span className="thin"></span>
           </h6>
@@ -79,7 +79,7 @@ backgroundImage: 'none',
       <div
         className="accordion-wrap"
         style={{
-          maxWidth: '100%',
+          
           color: 'black',
           paddingBottom: '100px' // text color to black for all children
         }}
