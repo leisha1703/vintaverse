@@ -9274,6 +9274,13 @@ footer.clean-footer.crev .circle-blur {
 }
 
 
+.item-box .icon,
+.item-box h5 {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
 
 
 
