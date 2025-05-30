@@ -2,7 +2,7 @@ import React from 'react';
 
 function Feat() {
   return (
-    <section className="feat" style={{ marginTop: '140px' }}>
+    <section className="feat" style={{ marginTop: '20px' }}>
       <div className="container">
         <div className="sec-head mb-80">
           <div className="d-flex align-items-center mb-30">

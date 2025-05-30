@@ -4,7 +4,7 @@ function Feat() {
   return (
     <section className="feat" style={{ marginBottom: '80px' }}>
       <div className="container">
-        <div className="sec-head mb-80">
+        <div className="sec-head mb-10">
           <div className="d-flex align-items-center mb-30">
             <h2 className="fw-600 fz-70 text-u d-rotate wow" >
               <span className="rotate-text">

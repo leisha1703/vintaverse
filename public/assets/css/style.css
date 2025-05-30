@@ -51,8 +51,8 @@ main {
 }
 
 .row>* {
-  padding-left: 0px;
-  padding-right: 30px;
+  /* padding-left: 0px;
+  padding-right: 20px; */
   margin-top: 58px;
   /* changes for my side */
 }
