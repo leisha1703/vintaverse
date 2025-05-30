@@ -39,7 +39,7 @@ function Challenge() {
                 <h4 className="mb-50">01 . The Challenge</h4>
               </div>
               <div className="col-lg-7">
-                <div className="text">
+                <div className="text slider-wrapper">
                   <h5 className="mb-30 fw-400 line-height-40">
                     {/* The goal is there are many variations of passages of Lorem
                     Ipsum available, but the majority have suffered alteration
@@ -47,7 +47,7 @@ function Challenge() {
                     don&lsquo;t look even slightly believable. */}
                     Modern dating is flooded with noise — endless swipes, recycled bios, and profiles that don’t tell the real story. It’s easy to feel like authenticity has been lost in the scroll.
                   </h5>
-                  <p className="fz-18">
+                  <p className="fz-18 slider-wrapper">
                     {/* There are many variations of passages of Lorem Ipsum
                     available, but the majority have suffered alteration in some
                     form, by injected humour, or randomised words which

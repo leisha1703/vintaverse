@@ -11,8 +11,8 @@ function Solution() {
                 <h4 className="mb-50">02 . The Solution</h4>
               </div>
               <div className="col-lg-7">
-                <div className="text">
-                  <p className="fz-18">
+                <div className="text slider-wrapper">
+                  <p className="fz-18 slider-wrapper">
                     {/* There are many variations of passages of Lorem Ipsum
                     available, but the majority have suffered alteration in some
                     form, by injected humour, or randomised words which

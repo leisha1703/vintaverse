@@ -39,7 +39,7 @@ function Challenge() {
                 <h4 className="mb-50">01 . The Challenge</h4>
               </div>
               <div className="col-lg-7">
-                <div className="text">
+                <div className="text slider-wrapper">
                   <h5 className="mb-30 fw-400 line-height-40">
                     {/* The goal is there are many variations of passages of Lorem
                     Ipsum available, but the majority have suffered alteration
