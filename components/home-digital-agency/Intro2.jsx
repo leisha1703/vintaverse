@@ -40,9 +40,9 @@ function Intro2() {
   });
 
   return (
-    <section className="intro-accord" style={{ marginTop: '200px', marginBottom: '100px' }}>
+    <section className="intro-accord" style={{ marginTop: '50px',  }}>
       <div className="container">
-        <div className="sec-head mb-80" style={{ color: 'black' }}>
+        <div className="sec-head " style={{ color: 'black' }}>
           <div className="d-flex align-items-center mb-30">
             <h2 className="fw-600 fz-70 text-u d-rotate wow" style={{ color: 'black' }}>
               <span
@@ -78,17 +78,13 @@ backgroundImage: 'none',
 
       <div
         className="accordion-wrap"
-        style={{
-          
-          color: 'black',
-          paddingBottom: '100px' // text color to black for all children
-        }}
+
       >
         {customData.map((item, i) => (
           <div key={i} className="service-item" style={{ color: 'black' }}>
             {/* Pass color prop to BouncingLine to make it black */}
-            <BouncingLine color="black" />
-            <div className="content-row width-72">
+            <BouncingLine color="black"/>
+            <div className="content-row width-72 mb-40" >
               <div className="icon">
                 <img
                   src={item.icon || item.img}

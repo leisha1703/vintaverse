@@ -3,6 +3,7 @@
   margin: 20px ;
   position: relative;
   overflow: hidden;
+
 }
 
 .bouncing-line {
@@ -17,4 +18,7 @@
 stroke-width: 1.5;
 color: white;
 }
+
+
+
 

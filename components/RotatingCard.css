@@ -1,0 +1,77 @@
+.rotating-card {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  background: #1E1E1E;
+  height: 800px;
+}
+
+/* .card-border {
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  width: calc(100% + 8px);
+  height: calc(100% + 8px);
+  background: linear-gradient(0deg, #FF00CC, #3333FF, #00FFCC, #FFCC00, #FF00CC);
+  background-size: 400% 400%;
+  border-radius: 18px;
+  animation: rotateGradient 4s linear infinite;
+  z-index: 1;
+} */
+.card-border {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
+  background: #fd5b38; /* Single color */
+  border-radius: 18px;
+  z-index: 1;
+
+  /* Rotation effect using pseudo element */
+  animation: rotateSolid 4s linear infinite;
+}
+
+
+.card-mask {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  width: calc(100% - 2px);
+  height: calc(100% - 2px);
+  background: #1E1E1E;
+  border-radius: 14px;
+  z-index: 2;
+}
+
+.card-content {
+  position: relative;
+  z-index: 3;
+  padding: 30px 25px;
+}
+/* @keyframes rotateGradient {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+} */
+
+
+@keyframes rotateSolid {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 767px) {
+  .services .swiper-slide .card-content h5 {
+    text-align: center;
+  }
+}
+

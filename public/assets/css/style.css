@@ -1373,6 +1373,7 @@ figure {
 .main-marq {
   position: relative;
   padding: 0;
+  
 }
 
 .main-marq:after {
@@ -1545,6 +1546,7 @@ figure {
   position: relative;
   -webkit-animation: slide-har 80s linear infinite;
   animation: slide-har 80s linear infinite;
+  
 }
 
 .slide-har.st2 .box {
@@ -4019,7 +4021,7 @@ body.loaded {
   position: relative;
   background-color: #fff;
   color: #000;
-  padding-top: 50px;
+  padding-top: 20px;
   ;
 }
 
@@ -4028,9 +4030,9 @@ body.loaded {
 
 }
 
-.accordion-wrap .service-item {
+/* .accordion-wrap .service-item {
   margin-bottom: 40px;
-}
+} */
 
 .intro-accord .circle-blur {
   position: absolute;
@@ -5897,6 +5899,12 @@ footer.clean-footer.crev .circle-blur {
   bottom: 0;
   width: 100%;
   z-index: 9;
+ 
+}
+@media (max-width: 767px) {
+  .hide-mobile-margin {
+    margin-bottom: 0 !important;
+  }
 }
 
 .work-fade .marq-head .main-marq:after {
@@ -5924,6 +5932,7 @@ footer.clean-footer.crev .circle-blur {
 
 .work-fade .marq-head .main-marq .box .item {
   padding: 0 60px;
+  
 }
 
 .work-fade .marq-head .main-marq .box .item h4 {
@@ -6438,6 +6447,10 @@ footer.clean-footer.crev .circle-blur {
   padding: 60px 40px;
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 15px;
+  height: 560px;
+  width:430px;
+ 
+  text-align: justify;
 }
 
 .services .item-box .icon {
@@ -6588,7 +6601,7 @@ footer.clean-footer.crev .circle-blur {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  margin-left: 20px;
+  /* margin-left: 20px; */
 }
 
 .service-item .line {
@@ -8824,7 +8837,6 @@ footer.clean-footer.crev .circle-blur {
 
   .section-padding {
     padding-top: 100px;
-    padding-bottom: 100px;
   }
 
   .sec-head h3.fz-50 {
@@ -9215,8 +9227,8 @@ footer.clean-footer.crev .circle-blur {
     flex-direction: column;
     text-align: center;
     align-items: center;
-    width: 70%;
-    margin: 0 auto;
+    width: 80%;
+    margin: auto;
   }
 
   .text-content p {
@@ -9234,6 +9246,7 @@ footer.clean-footer.crev .circle-blur {
     width: 90%;
     margin: 0 auto;
     text-align: justify;
+  
   }
 
   .sub-heading-container {
@@ -9259,3 +9272,11 @@ footer.clean-footer.crev .circle-blur {
   }
 
 }
+
+
+
+
+
+
+
+

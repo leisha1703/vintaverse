@@ -56,7 +56,7 @@ function Portfolio() {
             {/* <span className="up-arrow cursor-pointer"></span> */}
           </div>
         </div>
-        <div className="row">
+        <div className="row" >
           <div className="col-lg-3 d-flex align-items-end">
             <div className="text">
               <ul>
@@ -78,7 +78,7 @@ function Portfolio() {
                     <p>WPCenter</p>
                   </Link>
                 </li>
-                <li className='d-flex align-items-center gap-3' style={{ marginBottom: '300px' }}>
+                <li className='d-flex align-items-center gap-3 hide-mobile-margin' style={{marginBottom:'300px'}}>
                   <Image href="/project-details" src={arrowIcon} alt='up-arrow' className='up-arrow cursor-pointer' style={{ width: '40px', height: '40px' }} />
                   <Link href="/project-details3">
                     <p>Live Streaming App</p>
@@ -87,7 +87,7 @@ function Portfolio() {
               </ul>
             </div>
           </div>
-          <div className="col-lg-8">
+          <div className="col-lg-8" >
             <div className="work-swiper">
               {/* <div className="arrow-wrapper swiper-left-arrow">
                 <i className="arrow left ">‹</i>
@@ -161,7 +161,7 @@ function Portfolio() {
         </div>
         <div className="swiper-pagination"></div>
       </div>
-      <div className="marq-head">
+      <div className="marq-head" >
         <div className="main-marq xlrg text-u o-hidden">
           <div className="slide-har st1">
             <div className="box">
