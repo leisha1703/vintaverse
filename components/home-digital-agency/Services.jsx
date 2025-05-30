@@ -90,7 +90,7 @@ function Services() {
       <div className="container-fluid rest">
         <h2 className="fw-600 fz-70 text-u d-rotate wow">
           <span className="rotate-text width-86">
-            Our <span className="fw-200">Process</span>
+            Our <span className="fw-200">Solutions</span>
           </span>
         </h2>
         {data.map((item, i) => (
