@@ -103,7 +103,7 @@ function Services() {
                 <div>
                   <span className="sub-title main-color mb-10">Digital Marketing</span>
                   <h2>
-                    SEO /<span className="fw-200">Marketing</span>
+                    SEO / <span className="fw-200">Marketing</span>
                   </h2>
                 </div>
               </div>
@@ -135,7 +135,7 @@ function Services() {
                 <div>
                   <span className="sub-title main-color mb-10">Development</span>
                   <h2>
-                    Web<span className="fw-200">Development</span>
+                    Web <span className="fw-200">Development</span>
                   </h2>
                 </div>
               </div>
